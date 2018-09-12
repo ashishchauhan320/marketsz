@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Dashboard::Marketsz</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" sizes="32x32" type="image/x-icon">
+    <!-- Bootstrap.min.css, Animate.css and OwlCarousel.css -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <!-- Custom - from scss/style.scss -->
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <span id="tg" class="menu-icon" onclick="openNav()">&#9776;</span>
+        <h1>Main Navigation</h1>
+        <a href="dashboard.html"><svg><use xlink:href="#menu1"></use></svg><span>My Profile</span></a>
+        <a href="#"><svg><use xlink:href="#menu2"></use></svg><span>Upgrade Membership</span></a>
+        <a href="#"><svg><use xlink:href="#menu3"></use></svg><span>Manage Business Page</span></a>
+        <a class="active" href="#"><svg><use xlink:href="#menu4"></use></svg><span>Manage Shop</span></a>
+        <a href="#"><svg><use xlink:href="#menu5"></use></svg><span>Create A Campaign</span></a>
+        <a href="#"><svg><use xlink:href="#menu6"></use></svg><span>Manage Users</span></a>
+        <a href="#"><svg><use xlink:href="#menu8"></use></svg><span>View Analytics</span></a>
+        <a href="#"><svg><use xlink:href="#menu9"></use></svg><span>Manage Reviews</span></a>
+        <a href="dashboard-billings.html"><svg><use xlink:href="#menu11"></use></svg><span>Billing and Settings</span></a>
+        <a href="#"><svg><use xlink:href="#menu12"></use></svg><span>Support</span></a>
+        <a href="#"><svg><use xlink:href="#menu10"></use></svg><span>Logout</span></a>
+    </div>
+    <div id="main">
+
+        <header>
+            <div class="container-fluid">
+                <div class="head-wrap">
+                    <ul class="logo-plus-notification">
+                        <li><a href="#"><img src="images/logo.png"></a></li>
+                        <li><a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i><span>10</span></a></li>
+                    </ul>
+                    <div class="user_view"><span class="user_icon"><img src="images/user_img.png"></span><span class="caret1">Abhasa Spa <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                        <ul class="view_links">
+                            <li>
+                                <a href="#">settings</a>
+                            </li>
+                            <li>
+                                <a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="dashboard_content">
+            <div class="welcome-txt">
+                <div class="container-fluid">
+                    <div class="head-content">
+                        <h2>Welcome to Marketsz</h2>
+                        <p>Manage All Your Shops</p>
+                    </div>
+                    <div class="buttons-sets">
+                        <a href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="d-info">
+                    <form class="shop-from">
+                        <div class="b_description">
+                            <figure><img src="images/user-image.jpg"></figure>
+                            <h2>Business Description</h2>
+                            <textarea placeholder="Enter Text Here... "></textarea>
+                        </div>
+                        <div class="form-wrap">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Store Name">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <div class="form-group">
+                                <div class="custom-file-upload">
+                                    <input type="file" id="file" name="myfiles[]" multiple />
+                                </div>
+                            </div>
+                            <div class="form-group inline-flx">
+                                <div class=" slct">
+                                    <select class="form-control">
+                                    <option>Country</option>
+                                    <option>UK</option>
+                                    <option>USA</option>
+                                    <option>India</option>
+                                </select>
+                                </div>
+                                <div class="slct">
+                                    <select class="form-control">
+                                    <option>State</option>
+                                    <option>Newyork</option>
+                                    <option>Texas</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="form-group inline-flx">
+                                <div class=" slct">
+                                    <select class="form-control">
+                                    <option>City</option>
+                                   
+                                </select>
+                                </div>
+                                <div class="slct">
+                                    <select class="form-control">
+                                    <option>Zip Code</option>
+                                    <option>123456</option>
+                                    <option>098765</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Phone Number">
+                                <i class="fa fa-mobile"></i>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Cell Phone Number">
+                                <i class="fa fa-mobile"></i>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Email">
+                                <i class="fa fa-envelope-o"></i>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Website">
+                                <i class="fa fa-globe"></i>
+                            </div>
+                        </div>
+                        <input class="save-btn" type="submit" value="SAVE">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap -->
+    <!-- App -->
+    <!-- jQuery (necessary for JavaScript plugins) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://gitcdn.xyz/repo/thesmart/jquery-scrollspy/0.1.3/scrollspy.js"></script>
+
+    <!-- Our Custom js here -->
+    <script src="js/dashboard.js"></script>
+    <!----------------------------------------------------------SVG Icons---------------------------------------------------------->
+    <svg style="display:none;">
+           <symbol id="menu1" x="0px" y="0px" viewBox="0 0 96 96">
+        <g id="XMLID_1_">
+	<path id="XMLID_3_" class="st0" d="M75.9,75.9c0,2.6-2.1,4.6-4.6,4.6H24.8c-2.6,0-4.6-2.1-4.6-4.6v-4.6c0-12.2,18.6-18.6,18.6-18.6
+		s1.1-1.9,0-4.6c-3.9-2.9-4.4-7.4-4.6-18.6c0.8-11.2,8.7-13.9,13.9-13.9s13.1,2.7,13.9,13.9c-0.3,11.2-0.7,15.7-4.6,18.6
+		c-1.1,2.7,0,4.6,0,4.6S75.9,59,75.9,71.2V75.9z"/>
+</g>
+        </symbol>
+           <symbol id="menu2" x="0px" y="0px" viewBox="0 0 96 96">
+        <g id="XMLID_1_">
+	<path id="XMLID_8_" class="st0" d="M64.3,54.1H23.6V50h40.6V54.1z M80.5,29.7v36.6c0,2.2-1.8,4.1-4.1,4.1H19.6
+		c-2.2,0-4.1-1.8-4.1-4.1V29.7c0-2.2,1.8-4.1,4.1-4.1h56.9C78.7,25.7,80.5,27.5,80.5,29.7z M76.4,41.9H19.6v24.4h56.9V41.9z
+		 M76.4,29.7H19.6v4.1h56.9V29.7z M39.9,58.2H23.6v4.1h16.3V58.2z"/>
+</g>
+        </symbol>
+           <symbol id="menu3" x="0px" y="0px" viewBox="0 0 96 96">
+        <g id="XMLID_2_">
+	<path id="XMLID_8_" class="st0" d="M40.1,32.3h15.7v-3.9H40.1V32.3z M75.5,51.9v14.7c0,1.4-0.5,2.5-1.4,3.5c-1,1-2.1,1.4-3.5,1.4
+		H25.4c-1.4,0-2.5-0.5-3.5-1.4s-1.4-2.1-1.4-3.5V51.9h20.6v4.9c0,0.5,0.2,1,0.6,1.4c0.4,0.4,0.8,0.6,1.4,0.6h9.8
+		c0.5,0,1-0.2,1.4-0.6s0.6-0.8,0.6-1.4v-4.9H75.5z M51.9,51.9v3.9h-7.9v-3.9H51.9z M75.5,37.2V49h-55V37.2c0-1.4,0.5-2.5,1.4-3.5
+		s2.1-1.4,3.5-1.4h10.8v-4.9c0-0.8,0.3-1.5,0.9-2.1c0.6-0.6,1.3-0.9,2.1-0.9h17.7c0.8,0,1.5,0.3,2.1,0.9c0.6,0.6,0.9,1.3,0.9,2.1
+		v4.9h10.8c1.4,0,2.5,0.5,3.5,1.4C75,34.7,75.5,35.8,75.5,37.2z"/>
+</g>
+        </symbol>
+           <symbol id="menu4" x="0px" y="0px" viewBox="0 0 50 50">
+        <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 4 6 L 4 7 L 4 11.96875 L 4 12 C 3.9359994 12.309157 3 16.838128 3 19.5 C 3 20.87865 3.2699667 22.196585 4 23.25 L 4 47 L 4 48 L 5 48 L 30.8125 48 L 31.21875 48 L 39.8125 48 L 40.21875 48 L 45 48 L 46 48 L 46 47 L 46 23.25 C 46.730033 22.196585 47 20.87865 47 19.5 C 47 16.867666 46.082814 12.46382 46 12.0625 A 1.0001 1.0001 0 0 0 46 12 L 46 11.96875 L 46 7 L 46 6 L 45 6 L 5 6 L 4 6 z M 6 8 L 44 8 L 44 11 L 39.1875 11 A 1.0001 1.0001 0 0 0 38.78125 11 L 32.21875 11 A 1.0001 1.0001 0 0 0 31.90625 10.96875 A 1.0001 1.0001 0 0 0 31.8125 11 L 25.21875 11 A 1.0001 1.0001 0 0 0 24.90625 10.96875 A 1.0001 1.0001 0 0 0 24.8125 11 L 18.21875 11 A 1.0001 1.0001 0 0 0 17.90625 10.96875 A 1.0001 1.0001 0 0 0 17.8125 11 L 11.3125 11 L 11.21875 11 A 1.0001 1.0001 0 0 0 10.90625 10.96875 A 1.0001 1.0001 0 0 0 10.8125 11 L 10.78125 11 L 6 11 L 6 8 z M 5.875 13 L 10 13 L 10 21.875 C 9.3608474 22.552227 8.4959241 23 7.5 23 C 6.7270121 23 6.2384549 22.804309 5.875 22.4375 A 1.0001 1.0001 0 0 0 5.625 22.125 C 5.2262833 21.549665 5 20.60635 5 19.5 C 5 17.529031 5.7030945 13.91605 5.875 13 z M 12 13 L 17 13 L 17 21.875 C 16.360847 22.552227 15.495924 23 14.5 23 C 13.504076 23 12.639153 22.552227 12 21.875 L 12 13 z M 19 13 L 24 13 L 24 21.875 C 23.360847 22.552227 22.495924 23 21.5 23 C 20.504076 23 19.639153 22.552227 19 21.875 L 19 13 z M 26 13 L 31 13 L 31 21.90625 C 30.362187 22.573925 29.492579 23 28.5 23 C 27.504076 23 26.639153 22.552227 26 21.875 L 26 13 z M 33 13 L 38 13 L 38 21.90625 C 37.362187 22.573925 36.492579 23 35.5 23 C 34.507421 23 33.637813 22.573925 33 21.90625 L 33 13 z M 40 13 L 44.125 13 C 44.296905 13.91605 45 17.529031 45 19.5 C 45 20.484881 44.820656 21.32435 44.5 21.90625 A 1.0001 1.0001 0 0 0 44.03125 22.53125 C 43.679721 22.839627 43.20777 23 42.5 23 C 41.507421 23 40.637813 22.573925 40 21.90625 L 40 13 z M 32 23.53125 C 32.95979 24.371052 34.121509 25 35.5 25 C 36.878491 25 38.04021 24.371052 39 23.53125 C 39.95979 24.371052 41.121509 25 42.5 25 C 43.031629 25 43.54329 24.907309 44 24.75 L 44 46 L 41 46 L 41 29 L 41 28 L 40 28 L 31 28 L 30 28 L 30 29 L 30 46 L 6 46 L 6 24.75 C 6.4567098 24.907309 6.9683706 25 7.5 25 C 8.8755351 25 10.040967 24.398823 11 23.5625 C 11.959033 24.398823 13.124465 25 14.5 25 C 15.875535 25 17.040967 24.398823 18 23.5625 C 18.959033 24.398823 20.124465 25 21.5 25 C 22.875535 25 24.040967 24.398823 25 23.5625 C 25.959033 24.398823 27.124465 25 28.5 25 C 29.878491 25 31.04021 24.371052 32 23.53125 z M 9 28 L 9 29 L 9 42 L 9 43 L 10 43 L 26 43 L 27 43 L 27 42 L 27 29 L 27 28 L 26 28 L 10 28 L 9 28 z M 11 30 L 25 30 L 25 41 L 11 41 L 11 30 z M 32 30 L 39 30 L 39 46 L 32 46 L 32 30 z"/>
+        </symbol>
+           <symbol id="menu5" x="0px" y="0px" viewBox="0 0 96 96">
+        <g id="XMLID_2_">
+	<path id="XMLID_6_" class="st0" d="M71.6,40.1c1.1,0,2,0.4,2.8,1.2c0.8,0.8,1.2,1.7,1.2,2.8c0,1.1-0.4,2-1.2,2.8
+		c-0.8,0.8-1.7,1.2-2.8,1.2v11.8c0,1.1-0.4,2-1.2,2.8c-0.8,0.8-1.7,1.2-2.8,1.2c-8.5-7.1-16.8-11-24.9-11.7c-1.2,0.4-2.1,1.1-2.8,2
+		c-0.7,1-1,2-1,3.1c0,1.1,0.5,2,1.2,2.8c-0.4,0.7-0.6,1.3-0.7,2c-0.1,0.7,0,1.3,0.2,1.8c0.2,0.5,0.5,1.1,1,1.7s1,1.1,1.5,1.5
+		c0.5,0.4,1.1,0.9,1.9,1.5c-0.6,1.2-1.7,2-3.4,2.5c-1.7,0.5-3.4,0.6-5.2,0.4c-1.8-0.3-3.1-0.8-4.1-1.7c-0.1-0.5-0.4-1.4-0.9-2.7
+		c-0.5-1.3-0.8-2.3-1-2.9c-0.2-0.6-0.4-1.5-0.7-2.7s-0.4-2.2-0.5-3.1c0-0.9,0-1.9,0.1-3c0.1-1.2,0.3-2.3,0.7-3.4h-3.7
+		c-1.4,0-2.5-0.5-3.5-1.4c-1-1-1.4-2.1-1.4-3.5v-5.9c0-1.4,0.5-2.5,1.4-3.5s2.1-1.4,3.5-1.4h14.7c8.9,0,18.1-3.9,27.5-11.8
+		c1.1,0,2,0.4,2.8,1.2c0.8,0.8,1.2,1.7,1.2,2.8V40.1z M67.6,58.7V29.4c-8.1,6.2-15.9,9.7-23.6,10.5v8.3
+		C51.8,49.1,59.6,52.5,67.6,58.7z"/>
+</g>
+        </symbol>
+           <symbol id="menu6" x="0px" y="0px" viewBox="0 0 96 96">
+        <g id="XMLID_1_">
+	<path id="XMLID_3_" class="st0" d="M32.4,31.5c-0.6,0-1.2,0-1.7,0.2c-0.3,0.1-0.6,0.2-0.9,0.3l-0.3,0.2l-0.1,0.1
+		c-0.3,0.1-0.6,0.2-0.8,0.4l-0.2,0.1L28.2,33l-0.7,0.5L27,34.1c-0.6,0.6-1.2,1.3-1.6,2c-0.7,1.3-1.2,2.7-1.4,4.1h-0.3
+		c-0.7,0.2-0.9,1.6-0.4,3.1c0.3,0.9,0.7,1.6,1.2,1.9c0.6,2.5,2,4.6,3.8,5.9v1.4L26.8,54L24,55.5c-2.3,1.1-4.6,2.3-6.9,3.4
+		c-1.3,0.8-1.7,2.2-1.6,3.6c0.1,0.9-0.3,2,0.6,2.6c0.8,0.4,1.9,0.2,2.8,0.3h4.9c0.5-0.6,1.1-1.2,1.9-1.7l0.1-0.1h0.1
+		c3.8-1.9,7.6-3.8,11.4-5.7l4.4-2.1c-0.2-0.1-0.5-0.2-0.8-0.3L38.1,54l-1.4-1.4v-1.4c1.1-0.8,2.1-2,2.8-3.4c-1-1.6-1.7-3.4-2.2-5.2
+		c-0.8-0.8-1.6-1.8-2-3.1c-0.5-1.4-0.6-2.8-0.4-4.1c0.1-1.1,0.7-2.1,1.7-2.6c-0.3-0.2-0.7-0.3-1-0.5L35.1,32L34.7,32
+		c-0.4-0.1-0.7-0.3-1.1-0.3h-0.1C33.2,31.6,32.8,31.5,32.4,31.5L32.4,31.5z"/>
+	<path id="XMLID_4_" class="st1" d="M52.1,19.9c-1,0-1.9,0-2.8,0.3c-0.5,0-1,0.3-1.6,0.5c-0.2,0-0.4,0-0.6,0.3h-0.2
+		c-0.5,0.3-1,0.5-1.4,0.8h-0.2c-0.1,0.3-0.2,0.3-0.4,0.5c-0.4,0.3-0.8,0.3-1.1,0.8c-0.3,0.3-0.6,0.5-0.9,0.8c-1,1.1-1.9,2.2-2.6,3.5
+		c-1.2,1.9-2.1,4.3-2.5,6.8h-0.5c-1.2,0.5-1.5,2.7-0.7,5.1c0.5,1.6,1.3,2.7,2.1,3.2c1.1,4.3,3.4,7.9,6.4,10v2.4l-2.4,2.2l-4.7,2.4
+		c-3.8,1.9-7.6,3.8-11.5,5.7c-2.1,1.1-2.9,3.8-2.7,6c0.1,1.6-0.4,3.5,1,4.3c1.4,0.8,3.1,0.3,4.6,0.3h13.3h18.9
+		c5.6,0,11.2,0.3,16.8,0c1.8,0,2.3-1.9,2.1-3.5c0-2.2,0.2-4.6-1.6-6.2c-1.4-1.4-3.4-1.9-5.1-3c-2.5-1.1-5-2.4-7.5-3.5l-4.7-2.4
+		l-2.4-2.2v-2.4c3-2.2,5.3-5.7,6.4-10c0.8-0.5,1.6-1.6,2.1-3.2c0.8-2.4,0.5-4.6-0.7-5.1h-0.5c-0.4-2.4-1.3-4.9-2.5-6.8
+		c-0.7-1.4-1.6-2.4-2.6-3.5c-0.3-0.3-0.6-0.5-0.9-0.8h-0.1c-0.9-0.8-2-1.6-3-2.2c-0.3,0-0.5-0.3-0.8-0.3l-0.6-0.3
+		c-0.6-0.3-1.2-0.3-1.8-0.5h-0.1L52.1,19.9L52.1,19.9z"/>
+</g>
+        </symbol>
+           <symbol id="menu8" x="0px" y="0px" viewBox="0 0 96 96"><g id="XMLID_2_">
+	<path id="XMLID_6_" class="st0" d="M20.8,24.3v25.9l-5.3,5.7l3.5,3.2l14.2-15.3L45,54.6l9.3-9.3l6.1,4.9L80.5,30l-3.3-3.4
+		L60.1,43.8L54,38.9l-9.1,9.1l-12-10.8l-5,5.3V24.3H20.8z M27.9,54.8l-7.1,7.6v9.2h56.9v-7.1H27.9V54.8z"/>
+</g></symbol>
+           <symbol id="menu9"  viewBox="0 0 50 50"><path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 16.8125 0 A 1.0001 1.0001 0 0 0 16 1 L 16 2 L 7.90625 2 C 6.30625 2 5 3.30625 5 4.90625 L 5 47 C 5 48.645455 6.30625 50 7.90625 50 L 42 50 C 43.645455 50 44.90625 48.627083 44.90625 47.09375 L 44.90625 5 C 44.90955 4.967149 44.90415 4.938854 44.90625 4.90625 C 45.008976 3.3010284 43.661899 2 42.09375 2 L 34 2 L 34 1 A 1.0001 1.0001 0 0 0 33 0 L 17 0 A 1.0001 1.0001 0 0 0 16.90625 0 A 1.0001 1.0001 0 0 0 16.8125 0 z M 18 2 L 32 2 L 32 8 L 18 8 L 18 2 z M 7.90625 4 L 16 4 L 16 6 L 10 6 L 9 6 L 9 7 L 9 45 L 9 46 L 10 46 L 40 46 L 41 46 L 41 45 L 41 7 L 41 6 L 40 6 L 34 6 L 34 4 L 42.09375 4 C 42.49375 4 42.941228 4.4627223 42.90625 4.8125 A 1.0001 1.0001 0 0 0 42.90625 4.90625 L 42.90625 47.09375 C 42.90625 47.560417 42.554545 48 42 48 L 7.90625 48 C 7.50625 48 7 47.554545 7 47 L 7 4.90625 C 7 4.50625 7.50625 4 7.90625 4 z M 11 8 L 16 8 L 16 9 A 1.0001 1.0001 0 0 0 17 10 L 33 10 A 1.0001 1.0001 0 0 0 34 9 L 34 8 L 39 8 L 39 44 L 11 44 L 11 8 z M 15 17 L 15 18 L 15 24 L 15 25 L 16 25 L 22 25 L 23 25 L 23 24 L 23 18 L 23 17 L 22 17 L 16 17 L 15 17 z M 17 19 L 21 19 L 21 23 L 17 23 L 17 19 z M 26 20 L 26 22 L 35 22 L 35 20 L 26 20 z M 15 30 L 15 31 L 15 37 L 15 38 L 16 38 L 22 38 L 23 38 L 23 37 L 23 31 L 23 30 L 22 30 L 16 30 L 15 30 z M 17 32 L 21 32 L 21 36 L 17 36 L 17 32 z M 18 33 L 18 35 L 20 35 L 20 33 L 18 33 z M 26 33 L 26 35 L 35 35 L 35 33 L 26 33 z"/></symbol>
+           <symbol id="menu10" x="0px" y="0px" viewBox="0 0 96 96"> 
+        <g id="XMLID_2_">
+	<path id="XMLID_6_" class="st0" d="M42.9,67.1c0,0.1,0,0.3,0,0.7c0,0.4,0,0.7,0,0.9s0,0.5-0.1,0.8c-0.1,0.3-0.2,0.5-0.4,0.7
+		c-0.2,0.2-0.4,0.2-0.7,0.2H30.6c-2.8,0-5.2-1-7.1-3c-2-2-3-4.4-3-7.1V35.7c0-2.8,1-5.2,3-7.1s4.4-3,7.1-3h11.2
+		c0.3,0,0.6,0.1,0.8,0.3c0.2,0.2,0.3,0.5,0.3,0.8c0,0.1,0,0.3,0,0.7c0,0.4,0,0.7,0,0.9c0,0.2,0,0.5-0.1,0.8
+		c-0.1,0.3-0.2,0.5-0.4,0.7C42.4,30,42.1,30,41.8,30H30.6c-1.5,0-2.9,0.5-4,1.6s-1.6,2.4-1.6,4v24.7c0,1.5,0.5,2.9,1.6,4
+		c1.1,1.1,2.4,1.6,4,1.6h10.9l0.4,0l0.4,0.1l0.3,0.2l0.2,0.3L42.9,67.1z M75.5,48c0,0.6-0.2,1.1-0.7,1.6L55.8,68.7
+		c-0.4,0.4-1,0.7-1.6,0.7c-0.6,0-1.1-0.2-1.6-0.7c-0.4-0.4-0.7-1-0.7-1.6V57H36.2c-0.6,0-1.1-0.2-1.6-0.7s-0.7-1-0.7-1.6V41.3
+		c0-0.6,0.2-1.1,0.7-1.6c0.4-0.4,1-0.7,1.6-0.7h15.7V28.9c0-0.6,0.2-1.1,0.7-1.6c0.4-0.4,1-0.7,1.6-0.7c0.6,0,1.1,0.2,1.6,0.7
+		l19.1,19.1C75.3,46.9,75.5,47.4,75.5,48z"/>
+</g>
+        </symbol>
+        <symbol id="menu11" x="0px" y="0px" viewBox="0 0 96 96"> 
+ <g id="XMLID_1_">
+	<path id="XMLID_5_" class="st0" d="M27.6,15.8v3l11.5,11.5l-3,8.9l-8.9,3L15.8,30.6c-0.2,0.9-0.3,1.5-0.3,2.7c0,0,0,0.3,0,0.6
+		c0,0.3,0,0.6,0,0.9c0,8.9,7.3,16.2,16.2,16.2c1.4,0,2.6-0.3,3.9-0.6l6.4,6.2l11.9,12.1l8.9,8.9c1.5,1.5,3.6,2.4,5.9,2.4
+		c4.6,0,8.2-3.5,8.2-8.3c0-2.4-0.9-4.4-2.3-5.9l-0.1-0.3l-8.8-8.6L53.8,44.8l-6.4-6.2c0.3-1.5,0.6-2.7,0.6-3.8
+		c0-9.2-7.3-16.2-16.2-16.2H31h-0.5v-2.7H27.6z M68.7,67.2c2.4,0,4.4,1.8,4.4,4.4c0,2.4-2,4.4-4.4,4.4s-4.4-2.1-4.4-4.4
+		C64.3,69,66.2,67.2,68.7,67.2z"/>
+	<path id="XMLID_8_" class="st1" d="M30.3,15.5c-0.9,0-1.8,0-2.7,0.3l11.5,11.5l-3,8.9l-8.9,3L15.8,27.6c-0.2,0.9-0.3,1.5-0.3,2.7
+		c0,0,0,0.3,0,0.6c0,0.3,0,0.6,0,0.9c0,8.9,7.3,16.2,16.2,16.2c1.4,0,2.6-0.3,3.9-0.6l6.4,6.2l11.9,12.1l8.9,8.9
+		c1.5,1.5,3.6,2.4,5.9,2.4c4.6,0,8.2-3.5,8.2-8.3c0-2.4-0.9-4.4-2.3-5.9l-0.1-0.3l-8.8-8.6L53.8,41.8l-6.4-6.2
+		c0.3-1.5,0.6-2.7,0.6-3.8c0-9.2-7.3-16.2-16.2-16.2H31H30.3z M68.7,64.2c2.4,0,4.4,1.8,4.4,4.4c0,2.4-2,4.4-4.4,4.4
+		s-4.4-2.1-4.4-4.4C64.3,66,66.2,64.2,68.7,64.2z"/>
+	<path id="XMLID_9_" class="st0" d="M45,42.1l-5.8,5.6L39.1,48c0,0,0,0,0,0.3c0.2,0.6,0.2,1.5,0,2.7l2.9,2.7l6,6.2
+		c1.1-0.3,2.1-0.3,3,0l5.9-5.9l-1.5-1.5l-3-3l4.4-4.4l-3-3l-4.4,4.4L45,42.1z"/>
+	
+		<rect id="XMLID_10_" x="59.2" y="15.9" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 80.1001 102.59)" class="st2" width="4.2" height="37.6"/>
+	
+		<rect id="XMLID_11_" x="43.2" y="34.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.8931 54.2472)" class="st1" width="37.6" height="2.1"/>
+	<polygon id="XMLID_12_" class="st1" points="77.5,15.5 70.2,19.9 76.1,25.8 80.5,18.5 	"/>
+	<path id="XMLID_13_" class="st3" d="M45,39.1L39.1,45c1,2.4-1.2,7.1-3,8.9c-1.7,1.5-6.3,3.8-8.9,3L15.5,68.7l11.8,11.8l11.8-11.8
+		c-1-2.7,1.2-7.4,3-8.9c1.7-1.8,6.3-4.1,8.9-3l5.9-5.9L45,39.1z"/>
+	<path id="XMLID_14_" class="st4" d="M45,39.1L39.1,45c1,2.4-1.2,7.1-3,8.9c-1.7,1.5-6.3,3.8-8.9,3L15.5,68.7l5.9,5.9L51,45L45,39.1
+		z"/>
+	<path id="XMLID_18_" class="st5" d="M39.2,44.8L39.1,45c0,0,0,0,0,0.3C39.2,45,39.2,45,39.2,44.8z M55.4,49.5L51,53.9
+		c-2.6-1.2-7.1,1.2-8.9,3c-1.7,1.5-3.7,5.9-3,8.6c0.5-2.4,1.8-4.7,3-5.6c1.7-1.8,6.3-4.1,8.9-3l5.9-5.9L55.4,49.5z M39,65.7
+		L27.3,77.5L17,67.2l-1.5,1.5l11.8,11.8l11.8-11.8C38.8,67.8,38.8,66.6,39,65.7z"/>
+</g>
+        </symbol>
+        <symbol id="menu12" x="0px" y="0px" viewBox="0 0 96 96"> 
+ <g id="XMLID_1_">
+	<path id="XMLID_3_" class="st0" d="M70.8,35h-0.3c-1.6-11-11-19.5-22.5-19.5S27.1,24,25.5,35h-0.3c-3.6,0-6.5,2.9-6.5,6.5V48
+		c0,3.6,2.9,6.5,6.5,6.5h6.5V38.3C31.8,29.3,39,22,48,22s16.3,7.3,16.3,16.3v16.3h6.5c3.6,0,6.5-2.9,6.5-6.5v-6.5
+		C77.3,37.9,74.3,35,70.8,35z"/>
+	<path id="XMLID_4_" class="st0" d="M61,41.5c0-7.2-5.8-13-13-13s-13,5.8-13,13c0,7.2,5.8,13,13,13S61,48.7,61,41.5z"/>
+	<path id="XMLID_5_" class="st0" d="M48,57.8c-15.3,0-26,8-26,19.5v3.3h52v-3.3C74,65.8,63.3,57.8,48,57.8z"/>
+</g>
+        </symbol>
+    </svg>
+</body>
+
+</html>

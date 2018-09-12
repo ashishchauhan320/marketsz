@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Register::Coupontify</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" sizes="32x32" type="image/x-icon">
+    <!-- Bootstrap.min.css, Animate.css and OwlCarousel.css -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <!-- Custom - from scss/style.scss -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+</head>
+<body>
+    <div class="pk-loader">
+        <svg id="triangle" viewBox="-3 -4 39 39">
+             <polygon fill="#EFEFEF" stroke="#555" stroke-width="1" points="16,0 32,32 0,32"></polygon>
+        </svg>
+        <div class="loader-text">© 2018 Marketsz.</div>
+    </div>
+    <!-- Header area -->
+    <header>
+        <div class="top-head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a class="logo" href="#">
+                            <figure><img src="images/logo.png" alt="logo"></figure>
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="head-top-right-side">
+                            <ul>
+                                <li><a href="login.html"><img src="images/sign-in.svg" alt="signIn"></a></li>
+                                <li><a href="register.html"><img src="images/signup.svg" alt="signup"></a></li>
+                                <li><a href="#"><img src="images/call.svg" alt="phone-icon"></a></li>
+                                <li>
+                                    <div class="slct-lang" href="#">
+                                        <select>
+                                           <option>EN</option>
+                                           <option>HIN</option>
+                                           <option>CHN</option>
+                                       </select>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>
+                                        <figure><img src="images/placeholder.svg" alt="MapLocation"></figure><span><small>Your city</small>New York</span></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-bar">
+            <div class="container">
+                <div class="srch-sec">
+                    <i><img src="images/magnifier.svg" alt="search"></i><input type="search" placeholder="What Are You Searching For....?">
+                    <button><img src="images/srch.svg" alt="search"></button>
+                </div>
+                <div class="srch-sec nearme">
+                    <i><img src="images/magnifier.svg" alt="search"></i><input type="search" placeholder="Near Me">
+                    <button><img src="images/srch.svg" alt="search"></button>
+                </div>
+                <div class="cart-count">
+                    <img src="images/shopping-cart.svg" alt="cart-icon">
+                    <span class="cart-value">2</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li class="current-menu-item"><a href="#">Home</a></li>
+                    <li><a href="#">Local</a></li>
+                    <li><a href="#">Goods</a></li>
+                    <li><a href="#">Getaways</a></li>
+                    <li><a href="#">Clearance</a></li>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Cyber Hits</a></li>
+                    <li><a href="#">Deals of the day</a></li>
+                    <li><a href="#">Loyalty Program</a></li>
+                    <li><a href="#">Contest</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="login-section">
+        <figure class="half-img" style="background: url(images/after-img.jpg);"></figure>
+        <div class="container">
+            <div class="main">
+                <div class="left-sec">
+                    <h2>Welcome to the Famouse Online Dealing Website Coupontify.</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's.Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's.</p>
+                    <a class="register-btn" href="login.html">Login</a>
+                </div>
+                <div class="right-sec">
+                    <div class="authentication-window">
+                        <div class="top-view">
+                            <div class="lft"><a class="active" href="login.html"><i class="fa fa-user-plus" aria-hidden="true"></i></a></div>
+                            <div class="rght">
+                                <h2>Sign Up</h2>
+                                <form>
+                                    <div class="form-group lt">
+                                        <input class="form-control" placeholder="First Name" type="text">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="form-group rt">
+                                        <input class="form-control" placeholder="Last Name" type="text">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="form-group fl">
+                                        <input class="form-control" placeholder="Email" type="text">
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="form-group lt">
+                                        <input class="form-control" placeholder="Create Password" type="password">
+                                        <i class="fa fa-lock" aria-hidden="true"></i>
+                                    </div>
+                                     <div class="form-group rt">
+                                        <input class="form-control" placeholder="Confirm Password" type="password">
+                                        <i class="fa fa-lock" aria-hidden="true"></i>
+                                    </div>
+                                    
+                                    <input class="login-btn" type="button" value="Signup">
+                                    <p class="rmbr tc"><span class="accept"><input type="checkbox"> I Accept the <a href="#">Terms and Conditions</a> of the website</span></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="bottom-view">
+                            <div class="lft"><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i></a></div>
+                            <div class="rght">
+                                <div class="fb-login">
+                                    <a class="fb-logon-btn" href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Login with Facebook</a>
+                                    <p>If you have an already account? <a href="login.html">Login Now!</a> it’s really simple and you can start enjoing all the benefits!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- jQuery (necessary for JavaScript plugins) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Our Custom js here -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>User Dashboard | MarketSZ</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Style -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link href="https://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" type="text/css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="pk-loader">
+        <svg id="triangle" viewBox="-3 -4 39 39">
+             <polygon fill="#EFEFEF" stroke="#555" stroke-width="1" points="16,0 32,32 0,32"></polygon>
+        </svg>
+        <div class="loader-text">© 2018 Marketsz.</div>
+    </div>
+    <header class="d-header">
+        <a href="#" class="logo"><img src="images/logo.png"></a>
+        <div class="container-fluid">
+            <div class="hdr-wrap">
+                <a class="notifications" href="#"><i class="fa fa-bell-o" aria-hidden="true"></i><span>10</span></a>
+                <div class="user_view"><span class="user_icon"><img src="images/user_img.png"></span><span class="caret1">Peter Smith <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                    <ul class="view_links">
+                        <li>
+                            <a href="#"><i class="fa fa-wrench" aria-hidden="true"></i> Change Password</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="dashboard-content">
+        <aside class="dashboard-nav">
+            <ul>
+                <li><a href=""><span><img src="images/menu-icon1.png" alt="profile-img"></span>My Profile</a></li>
+                <li><a href=""><span><img src="images/menu-icon2.png" alt="Feature-img"></span>My Features</a></li>
+                <li><a href="#"><span><img src="images/menu-icon3.png" alt="Favourite-img"></span>My Favourites </a></li>
+                <li><a href="#"><span><img src="images/menu-icon4.png" alt="Reservation-img"></span>My Reservations</a></li>
+                <li><a href="#"><span><img src="images/menu-icon5.png" alt="Review-img"></span>My Reviews</a></li>
+                <li><a href="#"><span><img src="images/menu-icon6.png" alt="Subscription-img"></span>My Subscriptions</a></li>
+                <li><a href="#"><span><img src="images/menu-icon7.png" alt="setting-img"></span>Settings</a></li>
+                <li><a href="#"><span><img src="images/menu-icon8.png" alt="support-img"></span>Support</a></li>
+                <li><a href="#"><span><img src="images/menu-icon9.png" alt="logout-img"></span>Logout</a></li>
+            </ul>
+        </aside>
+        <div class="content-section">
+            <div class="cntnt-head-bar">
+                <h1><span><img src="images/stng-icon.png"></span>Settings</h1>
+            </div>
+            <div class="content-info">
+                <h2 class="msg-bar">Hi Peter Smith, Need Any Help? We Are Here To Support You!</h2>
+                <div class="contact-section">
+                    <h2>Contact Us</h2>
+                    <form>
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Your Name">
+                            <input class="form-control" type="text" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Your Email">
+                            <div class="sl form-control"><select><option>Sales</option></select></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Type Your Message Here...."></textarea>
+                        </div>
+                        <input class="snd-btn" type="submit" value="send">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+    
+</body>
+
+</html>

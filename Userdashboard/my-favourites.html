@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>User Dashboard | MarketSZ</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Style -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link href="https://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" type="text/css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="pk-loader">
+        <svg id="triangle" viewBox="-3 -4 39 39">
+             <polygon fill="#EFEFEF" stroke="#555" stroke-width="1" points="16,0 32,32 0,32"></polygon>
+        </svg>
+        <div class="loader-text">© 2018 Marketsz.</div>
+    </div>
+    <header class="d-header">
+        <a href="#" class="logo"><img src="images/logo.png"></a>
+        <div class="container-fluid">
+            <div class="hdr-wrap">
+                <a class="notifications" href="#"><i class="fa fa-bell-o" aria-hidden="true"></i><span>10</span></a>
+                <div class="user_view"><span class="user_icon"><img src="images/user_img.png"></span><span class="caret1">Peter Smith <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                    <ul class="view_links">
+                        <li>
+                            <a href="#"><i class="fa fa-wrench" aria-hidden="true"></i> Change Password</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="dashboard-content">
+        <aside class="dashboard-nav">
+            <ul>
+                <li><a href=""><span><img src="images/menu-icon1.png" alt="profile-img"></span>My Profile</a></li>
+                <li><a href=""><span><img src="images/menu-icon2.png" alt="Feature-img"></span>My Features</a></li>
+                <li><a href=""><span><img src="images/menu-icon10.png" alt="Feature-img"></span>My E-gifts</a></li>
+                <li class="active"><a href="#"><span><img src="images/menu-icon3.png" alt="Favourite-img"></span>My Favourites </a></li>
+                <li><a href="#"><span><img src="images/menu-icon4.png" alt="Reservation-img"></span>My Reservations</a></li>
+                <li><a href="#"><span><img src="images/menu-icon5.png" alt="Review-img"></span>My Reviews</a></li>
+                <li><a href="#"><span><img src="images/menu-icon6.png" alt="Subscription-img"></span>My Subscriptions</a></li>
+                <li><a href="#"><span><img src="images/menu-icon7.png" alt="setting-img"></span>Settings</a></li>
+                <li><a href="#"><span><img src="images/menu-icon8.png" alt="support-img"></span>Support</a></li>
+                <li><a href="#"><span><img src="images/menu-icon9.png" alt="logout-img"></span>Logout</a></li>
+            </ul>
+        </aside>
+        <div class="content-section">
+            <div class="cntnt-head-bar">
+                <h1><span><img src="images/fav-icon.png"></span>My Favourites</h1>
+            </div>
+            <div class="content-info">
+                <h2 class="msg-bar">Hi Peter! Contest You Are Participating In</h2>
+                <div class="filter-sec">
+                    <div class="location">
+                        <select>
+                        <option>Location</option>
+                        <option>City1</option>
+                        <option>City2</option>
+                    </select>
+                    </div>
+                    <div class="flters">
+                        <select>
+                        <option>Filters</option>
+                        <option>Filter1</option>
+                        <option>Filter2</option>
+                    </select>
+                    </div>
+                </div>
+                <article class="egift-box fv-box">
+                    <figure>
+                        <span><img src="images/fav-logo.jpg"></span>
+                    </figure>
+                    <div class="gift-details">
+                        <div class="gift-info">
+                            <h2>Grotto Spa</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's.<br> Lorem Ipsum is simply dummy text of the printing and industry. </p>
+                            <ul class="snd_dtls">
+                                <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a></li>
+                                <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Send an E-Gift</a></li>
+                            </ul>
+                        </div>
+                        <div class="gift-value">
+                            <div class="value-div">
+                                <div class="money-value">
+                                    <h3><span>11%</span> Off <small>Additional</small></h3>
+                                    <div class="rating">
+                                        <ul>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                        </ul>
+                                        <span>( 129 rates )</span>
+                                    </div>
+                                </div>
+                                <div class="expiry">
+                                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> Ending on: Oct 18, 2015</p>
+                                </div>
+                            </div>
+                            <div class="buttons_set">
+                                <a class="btn-2" href="#">Get code</a>
+                                <a class="btn-3" href="#">Buy</a>
+                                <a class="rdm-btn" href="#">Unfavourite</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="egift-box fv-box">
+                    <figure>
+                        <span><img src="images/fav-logo2.jpg"></span>
+                    </figure>
+                    <div class="gift-details">
+                        <div class="gift-info">
+                            <h2>Sakana</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's.<br> Lorem Ipsum is simply dummy text of the printing and industry. </p>
+                            <ul class="snd_dtls">
+                                <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a></li>
+                                <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Send an E-Gift</a></li>
+                            </ul>
+                        </div>
+                        <div class="gift-value">
+                            <div class="value-div">
+                                <div class="money-value">
+                                    <h3><span>82%</span> Off <small>Additional</small></h3>
+                                    <div class="rating">
+                                        <ul>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                        </ul>
+                                        <span>( 129 rates )</span>
+                                    </div>
+                                </div>
+                                <div class="expiry">
+                                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> Ending on: Oct 18, 2015</p>
+                                </div>
+                            </div>
+                            <div class="buttons_set">
+                                <a class="btn-2" href="#">Get code</a>
+                                <a class="btn-3" href="#">Buy</a>
+                                <a class="rdm-btn" href="#">Unfavourite</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="egift-box fv-box">
+                    <figure>
+                        <span><img src="images/fav-logo.jpg"></span>
+                    </figure>
+                    <div class="gift-details">
+                        <div class="gift-info">
+                            <h2>Grotto Spa</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's.<br> Lorem Ipsum is simply dummy text of the printing and industry. </p>
+                            <ul class="snd_dtls">
+                                <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a></li>
+                                <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Send an E-Gift</a></li>
+                            </ul>
+                        </div>
+                        <div class="gift-value">
+                            <div class="value-div">
+                                <div class="money-value">
+                                    <h3><span>11%</span> Off <small>Additional</small></h3>
+                                    <div class="rating">
+                                        <ul>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                        </ul>
+                                        <span>( 129 rates )</span>
+                                    </div>
+                                </div>
+                                <div class="expiry">
+                                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> Ending on: Oct 18, 2015</p>
+                                </div>
+                            </div>
+                            <div class="buttons_set">
+                                <a class="btn-2" href="#">Get code</a>
+                                <a class="btn-3" href="#">Buy</a>
+                                <a class="rdm-btn" href="#">Unfavourite</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="egift-box fv-box">
+                    <figure>
+                        <span><img src="images/fav-logo2.jpg"></span>
+                    </figure>
+                    <div class="gift-details">
+                        <div class="gift-info">
+                            <h2>Sakana</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's.<br> Lorem Ipsum is simply dummy text of the printing and industry. </p>
+                            <ul class="snd_dtls">
+                                <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a></li>
+                                <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Send an E-Gift</a></li>
+                            </ul>
+                        </div>
+                        <div class="gift-value">
+                            <div class="value-div">
+                                <div class="money-value">
+                                    <h3><span>82%</span> Off <small>Additional</small></h3>
+                                    <div class="rating">
+                                        <ul>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                        </ul>
+                                        <span>( 129 rates )</span>
+                                    </div>
+                                </div>
+                                <div class="expiry">
+                                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> Ending on: Oct 18, 2015</p>
+                                </div>
+                            </div>
+                            <div class="buttons_set">
+                                <a class="btn-2" href="#">Get code</a>
+                                <a class="btn-3" href="#">Buy</a>
+                                <a class="rdm-btn" href="#">Unfavourite</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div class="pagination"><img src="images/pagination.jpg"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+    
+   
+</body>
+
+</html>

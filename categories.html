@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Categories::Coupontify</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" sizes="32x32" type="image/x-icon">
+    <!-- Bootstrap.min.css, Animate.css and OwlCarousel.css -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <!-- Custom - from scss/style.scss -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="pk-loader">
+        <svg id="triangle" viewBox="-3 -4 39 39">
+             <polygon fill="#EFEFEF" stroke="#555" stroke-width="1" points="16,0 32,32 0,32"></polygon>
+        </svg>
+        <div class="loader-text">© 2018 Marketsz.</div>
+    </div>
+    <!-- Header area -->
+    <header>
+        <div class="top-head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a class="logo" href="#">
+                            <figure><img src="images/logo.png" alt="logo"></figure>
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="head-top-right-side">
+                            <ul>
+                                <li><a href="login.html"><img src="images/sign-in.svg" alt="signIn"></a></li>
+                                <li><a href="register.html"><img src="images/signup.svg" alt="signup"></a></li>
+                                <li><a href="#"><img src="images/call.svg" alt="phone-icon"></a></li>
+                                <li>
+                                    <div class="slct-lang" href="#">
+                                        <select>
+                                           <option>EN</option>
+                                           <option>HIN</option>
+                                           <option>CHN</option>
+                                       </select>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>
+                                        <figure><img src="images/placeholder.svg" alt="MapLocation"></figure><span><small>Your city</small>New York</span></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-bar">
+            <div class="container">
+                <div class="srch-sec">
+                    <i><img src="images/magnifier.svg" alt="search"></i><input type="search" placeholder="What Are You Searching For....?">
+                    <button><img src="images/srch.svg" alt="search"></button>
+                </div>
+                <div class="srch-sec nearme">
+                    <i><img src="images/magnifier.svg" alt="search"></i><input type="search" placeholder="Near Me">
+                    <button><img src="images/srch.svg" alt="search"></button>
+                </div>
+                <div class="cart-count">
+                    <img src="images/shopping-cart.svg" alt="cart-icon">
+                    <span class="cart-value">2</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li class="current-menu-item"><a href="#">Home</a></li>
+                    <li><a href="#">Local</a></li>
+                    <li><a href="#">Goods</a></li>
+                    <li><a href="#">Getaways</a></li>
+                    <li><a href="#">Clearance</a></li>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Cyber Hits</a></li>
+                    <li><a href="#">Deals of the day</a></li>
+                    <li><a href="#">Loyalty Program</a></li>
+                    <li><a href="#">Contest</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="contact_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="fgr_bnr">
+                        <figure style="background:url(images/category-banner.jpg) no-repeat;">
+                            <div class="contact_title_main">
+                                <div class="contact_title_sc">
+                                    <h2>CATEGORIES</h2>
+
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item active">CATEGORIES</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- inner_banner end -->
+    <section class="cat-filters">
+        <div class="container">
+            <div class="filter-slide owl-carousel owl-theme" id="filter-cat">
+                <div class="item">
+                    <div class="filtr-box">
+                         <p>Travel</p>
+                        <svg><use xlink:href="#srvc_icon5"></use></svg>
+                       
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="filtr-box">
+                        <p>Things-To-Do</p>
+                        <svg><use xlink:href="#srvc_icon2"></use></svg>
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="filtr-box active-filtr">
+                        <p>Beauty & Spas</p>
+                        <svg><use xlink:href="#srvc_icon1"></use></svg>
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="filtr-box">
+                        <p>Food & Drink</p>
+                        <svg><use xlink:href="#srvc_icon3"></use></svg>
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="filtr-box">
+                         <p>Electronics</p>
+                        <svg><use xlink:href="#srvc_icon7"></use></svg>
+                       
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="filtr-box">
+                        <p>Health & Fitness</p>
+                        <svg><use xlink:href="#srvc_icon6"></use></svg>
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="filtr-box">
+                        <p>Goods</p>
+                        <svg><use xlink:href="#srvc_icon4"></use></svg>
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="filtr-box">
+                        <p>Entertainment</p>
+                        <svg><use xlink:href="#srvc_icon8"></use></svg>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="filtr-box">
+                        <p>Electronics</p>
+                        <svg><use xlink:href="#srvc_icon7"></use></svg>
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="filtr-box">
+                        <p>Beauty & Spas</p>
+                        <svg><use xlink:href="#srvc_icon1"></use></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="sec-top">
+                <div class="section-heading">
+                    <h2>Beauty & Spas</h2>
+                </div>
+                <div class="section-filters">
+                    <ul>
+                        <li class="s-deals"><a href="#">Special Deals</a></li>
+                        <li class="loyal-prog"><a href="#">loyalty program</a></li>
+                        <li class="cntst"><a href="#">Contest</a></li>
+                        <li class="sort-by">
+                            <select><option>Sort By</option></select>
+                        </li>
+                    </ul>
+                    <div class="well well-sm">
+                        <div class="btn-group">
+                            <a href="#" id="grid" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th"><i class="fa fa-th-large" aria-hidden="true"></i></span></a>
+                            <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list"><i class="fa fa-bars" aria-hidden="true"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="categories">
+        <div class="container">
+            <div class="wrap">
+                <aside class="filters-sidebar">
+                    <h3>Price Range</h3>
+                    <img src="images/sidebar-filters-img.jpg">
+                </aside>
+                <div class="view-products">
+                    <div id="products">
+                        <div class="item">
+                            <div class="thumbnail">
+                                <figure class="product-thumbnail">
+                                    <img class="group list-group-image" src="images/product-img.jpg" alt="product image" />
+                                    <span>25% off</span>
+                                </figure>
+                                <div class="caption">
+                                    <div class="left-panel">
+                                        <h5><a href="#">Apple</a></h5>
+                                        <h6>iPhone 6 Mock-up</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star(1).svg" alt="rating-star"></li>
+                                            </ul>
+                                            <span>( 129 rates )</span>
+                                        </div>
+                                        <p>South Beach, Miami</p>
+                                    </div>
+                                    <div class="right-panel">
+                                        <a class="like-btn" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                        <h2><small>$50</small><span>$32,50</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumbnail">
+                                <figure class="product-thumbnail">
+                                    <img class="group list-group-image" src="images/product-img2.jpg" alt="product image" />
+                                    <span>25% off</span>
+                                </figure>
+                                <div class="caption">
+                                    <div class="left-panel">
+                                        <h5><a href="#">Domino’s</a></h5>
+                                        <h6>Buy 1 Pizza & Get 50%...</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star(1).svg" alt="rating-star"></li>
+                                            </ul>
+                                            <span>( 129 rates )</span>
+                                        </div>
+                                        <p>South Beach, Miami</p>
+                                    </div>
+                                    <div class="right-panel">
+                                        <a class="like-btn" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                        <h2><small>$9,99</small><span>$4,99</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumbnail">
+                                <figure class="product-thumbnail">
+                                    <img class="group list-group-image" src="images/product-img3.jpg" alt="product image" />
+                                    <span>50% off</span>
+                                </figure>
+                                <div class="caption">
+                                    <div class="left-panel">
+                                        <h5><a href="#">Mystic Spa</a></h5>
+                                        <h6>On Every Massage Get...</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star(1).svg" alt="rating-star"></li>
+                                            </ul>
+                                            <span>( 129 rates )</span>
+                                        </div>
+                                        <p>South Beach, Miami</p>
+                                    </div>
+                                    <div class="right-panel">
+                                        <a class="like-btn" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                        <h2><small>$30</small><span>$15</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumbnail">
+                                <figure class="product-thumbnail">
+                                    <img class="group list-group-image" src="images/product-img4.jpg" alt="product image" />
+                                    <span>25% off</span>
+                                </figure>
+                                <div class="caption">
+                                    <div class="left-panel">
+                                        <h5><a href="#">Gametronic</a></h5>
+                                        <h6>Get 70% Discount On The...</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star(1).svg" alt="rating-star"></li>
+                                            </ul>
+                                            <span>( 129 rates )</span>
+                                        </div>
+                                        <p>South Beach, Miami</p>
+                                    </div>
+                                    <div class="right-panel">
+                                        <a class="like-btn" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                        <h2><small>$40</small><span>$12,50</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumbnail">
+                                <figure class="product-thumbnail">
+                                    <img class="group list-group-image" src="images/product-img5.jpg" alt="product image" />
+                                    <span>25% off</span>
+                                </figure>
+                                <div class="caption">
+                                    <div class="left-panel">
+                                        <h5><a href="#">Mystic Spa</a></h5>
+                                        <h6>On Every Massage Get...</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star(1).svg" alt="rating-star"></li>
+                                            </ul>
+                                            <span>( 129 rates )</span>
+                                        </div>
+                                        <p>South Beach, Miami</p>
+                                    </div>
+                                    <div class="right-panel">
+                                        <a class="like-btn" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                        <h2><small>$50</small><span>$32,50</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumbnail">
+                                <figure class="product-thumbnail">
+                                    <img class="group list-group-image" src="images/product-img6.jpg" alt="product image" />
+                                    <span>25% off</span>
+                                </figure>
+                                <div class="caption">
+                                    <div class="left-panel">
+                                        <h5><a href="#">Gametronic</a></h5>
+                                        <h6>Get 70% Discount On The...</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                                <li><img src="images/star(1).svg" alt="rating-star"></li>
+                                            </ul>
+                                            <span>( 129 rates )</span>
+                                        </div>
+                                        <p>South Beach, Miami</p>
+                                    </div>
+                                    <div class="right-panel">
+                                        <a class="like-btn" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                        <h2><small>$50</small><span>$32,50</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer area -->
+    <footer>
+        <div class="top_ftr">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="ftr_bx">
+                            <a href="index.html" title="" class="ftr_logo"><img src="images/footer_logo.png" alt="footer_logo"></a>
+                            <p>Discover fun activities and huge discounts in your city with Coupontify. Check out great deals on things to do from kids activities to nightlife; try out new restaurants, spas, massages and hair salons near you, or plan a trip away from home.</p>
+                            <div class="ftr_app">
+                                <h6>Download App</h6>
+                                <a href="#" title=""><img src="images/apple_icon.png" alt="apple_icon"></a>
+                                <a href="#" title=""><img src="images/android_icn.png" alt="android_icn"></a>
+                            </div>
+                        </div>
+                        <div class="ftr_bx1">
+                            <h6>Company INFO</h6>
+                            <ul>
+                                <li class="current-menu-item"><a href="index.html" title="">Home</a></li>
+                                <li><a href="#" title="">About Us </a></li>
+                                <li><a href="#" title="">Contact Us  </a></li>
+                                <li><a href="#" title="">Terms & Conditions</a></li>
+                                <li><a href="#" title="">Privacy Policy</a></li>
+                                <li><a href="#" title="">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="ftr_bx1 ftr_social">
+                            <h6>Follow US</h6>
+                            <ul>
+                                <li class=""><a href="#" title=""><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+                                <li class=""><a href="#" title=""><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+                                <li class=""><a href="#" title=""><i class="fa fa-linkedin" aria-hidden="true"></i>Linkedin</a></li>
+                                <li class=""><a href="#" title=""><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+                                <li class=""><a href="#" title=""><i class="fa fa-youtube" aria-hidden="true"></i>Youtube</a></li>
+                            </ul>
+                        </div>
+                        <div class="ftr_main_sc">
+                            <div class="ftr_bx1 ftr_bx3">
+                                <h6>Work with Coupontify</h6>
+                                <ul>
+                                    <li><a href="#">Join the Coupontify Marketplace</a>
+                                        <li>
+                                            <li><a href="#">Run a Coupontify Campaign</a>
+                                                <li>
+                                                    <li><a href="#">Learn About Coupontify Merchant</a>
+                                                        <li>
+                                                            <li><a href="#">Affiliate Program</a>
+                                                                <li>
+                                </ul>
+                            </div>
+                            <div class="ftr_bx1 ftr_bx4">
+                                <h6>More</h6>
+                                <ul>
+                                    <li><a href="#">Digital Coupons</a></li>
+                                    <li><a href="#">Loyalty Program</a></li>
+                                    <li><a href="#">Online Contest</a></li>
+                                    <li><a href="#">E-Gift</a></li>
+                                </ul>
+                            </div>
+                            <div class="mrchnt_sc"> <img src="images/mrchnt_logo.png" alt="mrchnt_logo">
+                                <h3>Merchant</h3>
+                                <p>Grow Your Business With Us Become a Merchant Today!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright_sc">
+            <div class="container">
+                <p>Copyright © 2016, AppName. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for JavaScript plugins) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Our Custom js here -->
+    <script src="js/custom.js"></script>
+
+
+    <!-- Select Interest modal -->
+
+    <div class="modal fade slct-intrst-modal" id="s_intrst" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--<a href="#" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close-modal.png"></a>-->
+                    <h3>Select Interest</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="intrst-boxes">
+                        <ul>
+                            <li class="clr1">
+                                <div class="display-table">
+                                    <div class="table-cell">
+                                        <span class="outer">
+                                           <input type="checkbox" id="box-1" class="chck">
+                                           <label for="box-1"></label>
+                                        </span>
+                                        <figure></figure>
+                                        Travel
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="clr2">
+                                <div class="display-table">
+                                    <div class="table-cell">
+                                        <span class="outer">
+                                           <input type="checkbox" id="box-2" class="chck">
+                                           <label for="box-2"></label>
+                                        </span>
+                                        <figure></figure>
+                                        Things To Do
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="clr3">
+                                <div class="display-table">
+                                    <div class="table-cell">
+                                        <span class="outer">
+                                           <input type="checkbox" id="box-3" class="chck">
+                                           <label for="box-3"></label>
+                                        </span>
+                                        <figure></figure>
+                                        Beauty & Spas
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="clr4">
+                                <div class="display-table">
+                                    <div class="table-cell">
+                                        <span class="outer">
+                                           <input type="checkbox" id="box-4" class="chck">
+                                           <label for="box-4"></label>
+                                        </span>
+                                        <figure></figure>
+                                        Food & Drink
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="clr5">
+                                <div class="display-table">
+                                    <div class="table-cell">
+                                        <span class="outer">
+                                           <input type="checkbox" id="box-5" class="chck">
+                                           <label for="box-5"></label>
+                                        </span>
+                                        <figure></figure>
+                                        Electronics
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="clr6">
+                                <div class="display-table">
+                                    <div class="table-cell">
+                                        <span class="outer">
+                                           <input type="checkbox" id="box-6" class="chck">
+                                           <label for="box-6"></label>
+                                        </span>
+                                        <figure></figure>
+                                        Health & Fitness
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="clr7">
+                                <div class="display-table">
+                                    <div class="table-cell">
+                                        <span class="outer">
+                                           <input type="checkbox" id="box-7" class="chck">
+                                           <label for="box-7"></label>
+                                        </span>
+                                        <figure></figure>
+                                        GOODS
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="clr8">
+                                <div class="display-table">
+                                    <div class="table-cell">
+                                        <span class="outer">
+                                           <input type="checkbox" id="box-8" class="chck">
+                                           <label for="box-8"></label>
+                                        </span>
+                                        <figure></figure>
+                                        Entertainment
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div><a data-dismiss="modal" aria-label="Close" class="skip-btn" href="#">skip for now</a> <a class="sv-btn" href="#">Save</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <svg style="display:none;">
+         <symbol id="srvc_icon1" x="0px" y="0px" viewBox="0 0 96 96">
+             <g id="XMLID_1_">
+	<path id="XMLID_3_" class="st0" d="M40.4,80.5h15.1c3.3,0,6.1-2.7,6.1-6.1H34.4C34.4,77.8,37.1,80.5,40.4,80.5z"/>
+	<rect id="XMLID_4_" x="34.4" y="53.3" class="st0" width="27.2" height="18.2"/>
+	<path id="XMLID_7_" class="st0" d="M58.6,18.5c0-1-0.5-2-1.4-2.5c-0.9-0.6-1.9-0.7-2.9-0.3l-15.1,6.5c-1.1,0.5-1.8,1.6-1.8,2.8
+		v25.2h21.2V18.5z M49.5,44.2h-6.1V28.6l6.1-2.6V44.2z"/>
+</g>
+         </symbol>
+         <symbol id="srvc_icon2" x="0px" y="0px" viewBox="0 0 96 96">
+<g id="XMLID_2_">
+	<path id="XMLID_7_" class="st0" d="M52.2,33.5l10.3,10.3L43.8,62.5L33.5,52.2L52.2,33.5z M45.3,65.4l20.2-20.2
+		c0.4-0.4,0.6-0.9,0.6-1.5s-0.2-1.1-0.6-1.5L53.6,30.5c-0.4-0.4-0.9-0.6-1.5-0.6c-0.6,0-1.1,0.2-1.5,0.6L30.5,50.7
+		c-0.4,0.4-0.6,0.9-0.6,1.5c0,0.6,0.2,1.1,0.6,1.5l11.8,11.8c0.4,0.4,0.9,0.6,1.5,0.6S44.9,65.8,45.3,65.4z M74.3,44.7L44.7,74.3
+		c-0.8,0.8-1.8,1.2-3,1.2c-1.2,0-2.1-0.4-3-1.2l-4.1-4.1c1.2-1.2,1.8-2.7,1.8-4.4s-0.6-3.2-1.8-4.4c-1.2-1.2-2.7-1.8-4.4-1.8
+		c-1.7,0-3.2,0.6-4.4,1.8l-4.1-4.1c-0.8-0.8-1.2-1.8-1.2-3s0.4-2.1,1.2-3l29.6-29.6c0.8-0.8,1.8-1.2,3-1.2s2.1,0.4,3,1.2l4.1,4.1
+		c-1.2,1.2-1.8,2.7-1.8,4.4c0,1.7,0.6,3.2,1.8,4.4c1.2,1.2,2.7,1.8,4.4,1.8s3.2-0.6,4.4-1.8l4.1,4.1c0.8,0.8,1.2,1.8,1.2,3
+		C75.5,42.9,75.1,43.8,74.3,44.7z"/>
+</g>
+         </symbol>
+        <symbol id="srvc_icon3" x="0px" y="0px" viewBox="0 0 96 96">
+<g id="XMLID_1_">
+	<path id="XMLID_3_" class="st0" d="M46.8,37.6c0,1.9-1.8,4-4.1,4v32.9c0,4.7-6.4,4.7-6.4,0V41.6c-2.2,0-4.2-1.7-4.2-4.3V19.2
+		c0-1.6,2.3-1.6,2.3,0.1v13.4h1.9V19.1c0-1.4,2.2-1.5,2.2,0.1v13.4h2V19.2c0-1.5,2.1-1.6,2.1,0.1v13.4h1.9V19.2
+		c0-1.5,2.2-1.6,2.2,0.1L46.8,37.6z"/>
+	<path id="XMLID_4_" class="st0" d="M63.8,23.4v51.1c0,4.6-6.4,4.5-6.4,0V54.2H54V23.4C54,16.2,63.8,16.2,63.8,23.4z"/>
+</g>
+         </symbol>
+        <symbol id="srvc_icon4" x="0px" y="0px" viewBox="0 0 96 96">
+<g id="XMLID_6_">
+	<path id="XMLID_11_" class="st0" d="M71.3,24.7H24.7v5.8h46.7V24.7z M74.3,53.8V48l-2.9-14.6H24.7L21.8,48v5.8h2.9v17.5h29.2V53.8
+		h11.7v17.5h5.8V53.8H74.3z M48,65.5H30.5V53.8H48V65.5z"/>
+</g>
+         </symbol>
+        <symbol id="srvc_icon5" x="0px" y="0px" viewBox="0 0 96 96">
+<g id="XMLID_2_">
+	<path id="XMLID_4_" class="st0" d="M78.7,17.5c5.4,5.4-1.6,10.2-15,23.6l5.1,32.1l-4.6,7l-11-30.4L39.2,62.8l1,14.1l-2.9,2.4
+		L31.2,68l-2.8-2.8L17.1,59l2.4-2.9l14.1,1l12.8-14L15.5,31.5l7.7-3.9L55,32.5C68.5,19,73.3,12.2,78.7,17.5z"/>
+</g>
+         </symbol>
+        <symbol id="srvc_icon6" x="0px" y="0px" viewBox="0 0 96 96">
+<g id="XMLID_4_">
+	<polygon id="XMLID_6_" class="st0" points="73,56.3 77.2,52.2 73,48 62.6,58.4 37.6,33.4 48,23 43.8,18.8 39.7,23 35.5,18.8 
+		29.2,25.1 25.1,20.9 20.9,25.1 25.1,29.2 18.8,35.5 23,39.7 18.8,43.8 23,48 33.4,37.6 58.4,62.6 48,73 52.2,77.2 56.3,73 
+		60.5,77.2 66.8,70.9 70.9,75.1 75.1,70.9 70.9,66.8 77.2,60.5 	"/>
+</g>
+         </symbol>
+        <symbol id="srvc_icon7" x="0px" y="0px" viewBox="0 0 96 96">
+<g id="XMLID_2_">
+	<path id="XMLID_7_" class="st0" d="M66.3,62.9c2.5,0,4.6-2.1,4.6-4.6l0-25.2c0-2.5-2.1-4.6-4.6-4.6H29.7c-2.5,0-4.6,2.1-4.6,4.6
+		v25.2c0,2.5,2.1,4.6,4.6,4.6h-9.2c0,2.5,2.1,4.6,4.6,4.6h45.8c2.5,0,4.6-2.1,4.6-4.6H66.3z M29.7,33.1h36.7v25.2H29.7V33.1z
+		 M48,65.2c-1.3,0-2.3-1-2.3-2.3c0-1.3,1-2.3,2.3-2.3s2.3,1,2.3,2.3C50.3,64.2,49.3,65.2,48,65.2z"/>
+</g>
+         </symbol>
+        <symbol id="srvc_icon8" x="0px" y="0px" viewBox="0 0 96 96">
+<g id="XMLID_1_">
+	<path id="XMLID_3_" class="st0" d="M77.2,54.1l-10.4,3.1v-4.1c0-3.8-3.1-6.8-6.8-6.8H32.6c-3.8,0-6.8,3.1-6.8,6.8v20.5
+		c0,3.8,3.1,6.8,6.8,6.8H60c3.8,0,6.8-3.1,6.8-6.8v-4.1l10.4,3.1c1.8,0.5,3.3-0.6,3.3-2.4V56.6C80.5,54.7,79,53.6,77.2,54.1z"/>
+	<circle id="XMLID_4_" class="st0" cx="29.2" cy="29.2" r="13.7"/>
+	<circle id="XMLID_5_" class="st0" cx="60" cy="29.2" r="13.7"/>
+</g>
+         </symbol>
+    </svg>
+    
+</body>
+
+</html>

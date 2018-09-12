@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Home::Coupontify</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" sizes="32x32" type="image/x-icon">
+    <!-- Bootstrap.min.css, Animate.css and OwlCarousel.css -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <!-- Custom - from scss/style.scss -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="pk-loader">
+        <svg id="triangle" viewBox="-3 -4 39 39">
+             <polygon fill="#EFEFEF" stroke="#555" stroke-width="1" points="16,0 32,32 0,32"></polygon>
+        </svg>
+        <div class="loader-text">© 2018 Marketsz.</div>
+    </div>
+    <!-- Header area -->
+    <header>
+        <div class="top-head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a class="logo" href="#">
+                            <figure><img src="images/logo.png" alt="logo"></figure>
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="head-top-right-side">
+                            <ul>
+                                <li><a href="login.html"><img src="images/sign-in.svg" alt="signIn"></a></li>
+                                <li><a href="register.html"><img src="images/signup.svg" alt="signup"></a></li>
+                                <li><a href="#"><img src="images/call.svg" alt="phone-icon"></a></li>
+                                <li>
+                                    <div class="slct-lang" href="#">
+                                        <select>
+                                           <option>EN</option>
+                                           <option>HIN</option>
+                                           <option>CHN</option>
+                                       </select>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>
+                                        <figure><img src="images/placeholder.svg" alt="MapLocation"></figure><span><small>Your city</small>New York</span></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-bar">
+            <div class="container">
+                <div class="srch-sec">
+                    <i><img src="images/magnifier.svg" alt="search"></i><input type="search" placeholder="What Are You Searching For....?">
+                    <button><img src="images/srch.svg" alt="search"></button>
+                </div>
+                <div class="srch-sec nearme">
+                    <i><img src="images/magnifier.svg" alt="search"></i><input type="search" placeholder="Near Me">
+                    <button><img src="images/srch.svg" alt="search"></button>
+                </div>
+                <div class="cart-count">
+                    <img src="images/shopping-cart.svg" alt="cart-icon">
+                    <span class="cart-value">2</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li class="current-menu-item"><a href="#">Home</a></li>
+                    <li><a href="#">Local</a></li>
+                    <li><a href="#">Goods</a></li>
+                    <li><a href="#">Getaways</a></li>
+                    <li><a href="#">Clearance</a></li>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Cyber Hits</a></li>
+                    <li><a href="#">Deals of the day</a></li>
+                    <li><a href="#">Loyalty Program</a></li>
+                    <li><a href="#">Contest</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="banner-area">
+        <div class="container">
+            <aside class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <figure><svg><use xlink:href="#srvc_icon2"></use></svg></figure>Things To Do
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><svg><use xlink:href="#srvc_icon1"></use></svg></figure>Beauty & Spas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <figure><svg><use xlink:href="#srvc_icon3"></use></svg></figure>Food & Drink
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><svg><use xlink:href="#srvc_icon4"></use></svg></figure>Goods
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><svg><use xlink:href="#srvc_icon5"></use></svg></figure>Travel
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><svg><use xlink:href="#srvc_icon6"></use></svg></figure>Health & Fitness
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><svg><use xlink:href="#srvc_icon7"></use></svg></figure>Electronics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><svg><use xlink:href="#srvc_icon8"></use></svg></figure>Entertainment
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <article class="slider-area">
+                <i class="icn-img"><img src="images/scissor_icon.png" alt="img-icon"></i>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="background: url(images/slide-img1.jpg);">
+                            <div class="caption-info">
+                                <h2>2017</h2>
+                                <h3>Your Favorite New Year Parties</h3>
+                                <div class="discount-price">
+                                    <div class="cashback">
+                                        <small>Xtra</small>
+                                        <h1>30%</h1>
+                                        <h3>Cash back</h3>
+                                    </div>
+                                    <div class="upto_price">
+                                        <small>upto</small>
+                                        <h1>$5000</h1>
+                                    </div>
+                                </div>
+                                <div class="promocode_div">
+                                    <h3>Promocode</h3>
+                                    <label>HNY</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="background: url(images/slide-img1.jpg);">
+                            <div class="caption-info">
+                                <h2>2017</h2>
+                                <h3>Your Favorite New Year Parties</h3>
+                                <div class="discount-price">
+                                    <div class="cashback">
+                                        <small>Xtra</small>
+                                        <h1>30%</h1>
+                                        <h3>Cash back</h3>
+                                    </div>
+                                    <div class="upto_price">
+                                        <small>upto</small>
+                                        <h1>$5000</h1>
+                                    </div>
+                                </div>
+                                <div class="promocode_div">
+                                    <h3>Promocode</h3>
+                                    <label>HNY</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="background: url(images/slide-img1.jpg);">
+                            <div class="caption-info">
+                                <h2>2017</h2>
+                                <h3>Your Favorite New Year Parties</h3>
+                                <div class="discount-price">
+                                    <div class="cashback">
+                                        <small>Xtra</small>
+                                        <h1>30%</h1>
+                                        <h3>Cash back</h3>
+                                    </div>
+                                    <div class="upto_price">
+                                        <small>upto</small>
+                                        <h1>$5000</h1>
+                                    </div>
+                                </div>
+                                <div class="promocode_div">
+                                    <h3>Promocode</h3>
+                                    <label>HNY</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="background: url(images/slide-img1.jpg);">
+                            <div class="caption-info">
+                                <h2>2017</h2>
+                                <h3>Your Favorite New Year Parties</h3>
+                                <div class="discount-price">
+                                    <div class="cashback">
+                                        <small>Xtra</small>
+                                        <h1>30%</h1>
+                                        <h3>Cash back</h3>
+                                    </div>
+                                    <div class="upto_price">
+                                        <small>upto</small>
+                                        <h1>$5000</h1>
+                                    </div>
+                                </div>
+                                <div class="promocode_div">
+                                    <h3>Promocode</h3>
+                                    <label>HNY</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                             <span>Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                             <span>Next</span>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="hottest-deals">
+        <div class="container">
+            <div class="sec-top">
+                <div class="section-heading">
+                    <h2>Hottest Deals</h2>
+                </div>
+                <div class="section-filters">
+                    <ul>
+                        <li class="s-deals"><a href="#">Special Deals </a></li>
+                        <li class="loyal-prog"><a href="#">loyalty program</a></li>
+                        <li class="cntst"><a href="#">Contest</a></li>
+                        <li class="sort-by">
+                            <select><option>Sort By</option></select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="deal-grids">
+                <div class="grid-box">
+                    <figure><img src="images/starbuck-img.jpg" alt="product-img"> </figure>
+                    <figcaption>25% <span>Off</span></figcaption>
+                    <div class="info_product">
+                        <h2><small>$8</small>$6</h2>
+                        <h3><a href="#">Starbucks</a></h3>
+                        <div class="rating">
+                            <ul>
+                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                <li><img src="images/star(1).svg" alt="rating-star"></li>
+                            </ul>
+                            <span>( 129 rates )</span>
+                        </div>
+                        <p class="txt">Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's.</p>
+                        <ul class="snd_dtls">
+                            <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a></li>
+                            <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> Favorite</a></li>
+                            <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Send an E-Gift</a></li>
+                        </ul>
+                        <div class="buttons-set">
+                            <a class="ad-wishlist-btn wishlisted" href="#">Wishlisted</a>
+                            <a class="more-dtls-btn" href="#">More details</a>
+                            <span><img src="images/brand-icn.jpg" alt="brand-icon"></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="grid-box">
+                    <figure><img src="images/dominos-img.jpg" alt="product-img"> </figure>
+                    <figcaption>20% <span>Off</span></figcaption>
+                    <div class="info_product">
+                        <h2><small>$15</small>$12</h2>
+                        <h3><a href="#">Dominos</a></h3>
+                        <div class="rating">
+                            <ul>
+                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                <li><img src="images/star(1).svg" alt="rating-star"></li>
+                            </ul>
+                            <span>( 129 rates )</span>
+                        </div>
+                        <p class="txt">Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's.</p>
+                        <ul class="snd_dtls">
+                            <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a></li>
+                            <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> Favorite</a></li>
+                            <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Send an E-Gift</a></li>
+                        </ul>
+                        <div class="buttons-set">
+                            <a class="ad-wishlist-btn wishlisted" href="#">Wishlisted</a>
+                            <a class="more-dtls-btn" href="#">More details</a>
+                            <span><img src="images/brand-icn2.jpg" alt="brand-icon"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-box">
+                    <figure><img src="images/mc-brgr-img.jpg" alt="product-img"> </figure>
+                    <figcaption>35% <span>Off</span></figcaption>
+                    <div class="info_product">
+                        <h2><small>$9,99</small>$6,99</h2>
+                        <h3><a href="#">Mcdonalds</a></h3>
+                        <div class="rating">
+                            <ul>
+                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                <li><img src="images/star(1).svg" alt="rating-star"></li>
+                            </ul>
+                            <span>( 129 rates )</span>
+                        </div>
+                        <p class="txt">Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's.</p>
+                        <ul class="snd_dtls">
+                            <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a></li>
+                            <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> Favorite</a></li>
+                            <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Send an E-Gift</a></li>
+                        </ul>
+                        <div class="buttons-set">
+                            <a class="ad-wishlist-btn" href="#">Add To Wishlist</a>
+                            <a class="more-dtls-btn" href="#">More details</a>
+                            <span><img src="images/brand-icn3.jpg" alt="brand-icon"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-box">
+                    <figure><img src="images/kfc_vid.png" alt="product-img"> </figure>
+                    <figcaption>10% <span>Off</span></figcaption>
+                    <div class="info_product">
+                        <h2><small>$8</small>$6</h2>
+                        <h3><a href="#">Kfc</a></h3>
+                        <div class="rating">
+                            <ul>
+                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                <li><img src="images/star.svg" alt="rating-star"></li>
+                                <li><img src="images/star(1).svg" alt="rating-star"></li>
+                            </ul>
+                            <span>( 129 rates )</span>
+                        </div>
+                        <p class="txt">Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's.</p>
+                        <ul class="snd_dtls">
+                            <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a></li>
+                            <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> Favorite</a></li>
+                            <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Send an E-Gift</a></li>
+                        </ul>
+                        <div class="buttons-set">
+                            <a class="ad-wishlist-btn" href="#">Add To Wishlist</a>
+                            <a class="more-dtls-btn" href="#">More details</a>
+                            <span><img src="images/brand-icn4.jpg" alt="brand-icon"></span>
+                        </div>
+                    </div>
+                </div>
+                <a class="vw-all-btn" href="#">view all <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="near-by-deals">
+        <div class="container">
+            <div class="sec-top">
+                <div class="section-heading">
+                    <h2>Near By Deals</h2>
+                </div>
+                <div class="section-filters">
+                    <ul>
+                        <li class="sort-by">
+                            <select><option>Sort By</option></select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="promo-banner">
+                <i><img src="images/scissor_icon.png" alt="img-icon"></i>
+                <img src="images/promo-banner.jpg" alt="banner-img">
+            </div>
+            <div class="boxes_div">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="deal_bx">
+                            <figure><img src="images/spa-img.jpg" alt="product-img">
+                                <div class="wshlst"> <a href="#" title=""><i class="fa fa-heart-o"></i></a> </div>
+                            </figure>
+                            <div class="related_info">
+                                <h2><small>$50</small>$32,50</h2>
+                                <h3><a href="#">Full Day Spa</a></h3>
+                                <div class="rating">
+                                    <ul>
+                                        <li><img src="images/star.svg" alt="rating-star"></li>
+                                        <li><img src="images/star.svg" alt="rating-star"></li>
+                                        <li><img src="images/star.svg" alt="rating-star"></li>
+                                        <li><img src="images/star.svg" alt="rating-star"></li>
+                                        <li><img src="images/star(1).svg" alt="rating-star"></li>
+                                    </ul>
+                                    <span>( 129 rates )</span>
+                                </div>
+                                <p class="txt">Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's.</p>
+                                <ul class="snd_dtls">
+                                    <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Send an E-Gift</a></li>
+                                    <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a></li>
+                                </ul>
+                                <div class="buttons-set">
+                                    <a class="ad-wishlist-btn wishlisted" href="#">Add To Wishlist</a>
+                                    <a class="more-dtls-btn" href="#">More details</a>
+                                    <p>35% <small>Off</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="deal_bx">
+                            <figure><img src="images/lg-img.jpg" alt="product-img">
+                                <div class="wshlst"> <a href="#" title=""><i class="fa fa-heart-o"></i></a> </div>
+                            </figure>
+                            <div class="related_info">
+                                <h2><small>$400</small>$260</h2>
+                                <h3><a href="#">LG Smart 55”TV</a></h3>
+                                <div class="rating">
+                                    <ul>
+                                        <li><img src="images/star.svg" alt="rating-star"></li>
+                                        <li><img src="images/star.svg" alt="rating-star"></li>
+                                        <li><img src="images/star.svg" alt="rating-star"></li>
+                                        <li><img src="images/star.svg" alt="rating-star"></li>
+                                        <li><img src="images/star(1).svg" alt="rating-star"></li>
+                                    </ul>
+                                    <span>( 129 rates )</span>
+                                </div>
+                                <p class="txt">Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's.</p>
+                                <ul class="snd_dtls">
+                                    <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Send an E-Gift</a></li>
+                                    <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a></li>
+                                </ul>
+                                <div class="buttons-set">
+                                    <a class="ad-wishlist-btn" href="#">Add To Wishlist</a>
+                                    <a class="more-dtls-btn" href="#">More details</a>
+                                    <p>35% <small>Off</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="deal_bx">
+                            <figure><img src="images/fashion-cloth.jpg" alt="product-img">
+                                <div class="wshlst"> <a href="#" title=""><i class="fa fa-heart-o"></i></a> </div>
+                            </figure>
+                            <div class="related_info">
+                                <h2><small>$50</small>$32,50</h2>
+                                <h3><a href="#">Eline Shoes</a></h3>
+                                <div class="rating">
+                                    <ul>
+                                        <li><img src="images/star.svg" alt="rating-star"></li>
+                                        <li><img src="images/star.svg" alt="rating-star"></li>
+                                        <li><img src="images/star.svg" alt="rating-star"></li>
+                                        <li><img src="images/star.svg" alt="rating-star"></li>
+                                        <li><img src="images/star(1).svg" alt="rating-star"></li>
+                                    </ul>
+                                    <span>( 129 rates )</span>
+                                </div>
+                                <p class="txt">Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's.</p>
+                                <ul class="snd_dtls">
+                                    <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Send an E-Gift</a></li>
+                                    <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a></li>
+                                </ul>
+                                <div class="buttons-set">
+                                    <a class="ad-wishlist-btn wishlisted" href="#">Add To Wishlist</a>
+                                    <a class="more-dtls-btn" href="#">More details</a>
+                                    <p>35% <small>Off</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="vw-all-btn" href="#">view all <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="expire_sec">
+        <div class="container">
+            <div class="sec-top">
+                <div class="section-heading">
+                    <h2>Near to Expire</h2>
+                </div>
+                <div class="section-filters">
+                    <ul>
+                        <li class="sort-by">
+                            <select><option>Sort By</option></select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 expr_cst">
+                    <div class="expire_innr">
+                        <div class="expire_lft_cntnt">
+                            <h2>MOdel Sofas</h2>
+                            <p>Lorem Ipsum is simply dummy text </p>
+                            <ul class="snd_dtls">
+                                <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Send an E-Gift</a></li>
+                                <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a></li>
+                            </ul>
+                            <div class="button_brdr"> <a href="#" title="">Add to Wishlist</a> <a href="#" title="">More details</a> </div>
+                        </div>
+                        <div class="expire_rght_cntnt"> <img src="images/sofa.png" alt="sofa">
+                            <div class="suggested_ofr_abs">
+                                <div class="dscnt">
+                                    <h6>Off <span>35%</span></h6>
+                                </div>
+                                <div class="wshlst"> <a href="#" title=""><i class="fa fa-heart-o"></i></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 expr_cst">
+                    <div class="expire_innr">
+                        <div class="expire_lft_cntnt">
+                            <h2>Dress</h2>
+                            <p>Lorem Ipsum is simply dummy text</p>
+                            <ul class="snd_dtls">
+                                <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Send an E-Gift</a></li>
+                                <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a></li>
+                            </ul>
+                            <div class="button_brdr"> <a href="#" title="" class="wishlisted_blue">Wishlisted</a> <a href="#" title="">More details</a> </div>
+                        </div>
+                        <div class="expire_rght_cntnt"> <img src="images/dress.png" alt="dress">
+                            <div class="suggested_ofr_abs">
+                                <div class="dscnt">
+                                    <h6>Off <span>35%</span></h6>
+                                </div>
+                                <div class="wshlst"> <a href="#" title=""><i class="fa fa-heart-o"></i></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 expr_cst">
+                    <div class="expire_innr">
+                        <div class="expire_lft_cntnt">
+                            <h2>SAMSUNG TV</h2>
+                            <p>A 55” Smart TV with .....</p>
+                            <ul class="snd_dtls">
+                                <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Send an E-Gift</a></li>
+                                <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a></li>
+                            </ul>
+                            <div class="button_brdr"> <a href="#" title="">Add to Wishlist</a> <a href="#" title="">More details</a> </div>
+                        </div>
+                        <div class="expire_rght_cntnt"> <img src="images/samsung_tv.png" alt="samsung_tv">
+                            <div class="suggested_ofr_abs">
+                                <div class="dscnt">
+                                    <h6>Off <span>35%</span></h6>
+                                </div>
+                                <div class="wshlst"> <a href="#" title=""><i class="fa fa-heart-o"></i></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 expr_cst">
+                    <div class="expire_innr">
+                        <div class="expire_lft_cntnt">
+                            <h2>KING BED</h2>
+                            <p>Lorem Ipsum is simply dummy text </p>
+                            <ul class="snd_dtls">
+                                <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Send an E-Gift</a></li>
+                                <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a></li>
+                            </ul>
+                            <div class="button_brdr"> <a href="#" title="" class="wishlisted_blue">Wishlisted</a> <a href="#" title="">More details</a> </div>
+                        </div>
+                        <div class="expire_rght_cntnt"> <img src="images/king_bed.png" alt="king_bed">
+                            <div class="suggested_ofr_abs">
+                                <div class="dscnt">
+                                    <h6>Off <span>35%</span></h6>
+                                </div>
+                                <div class="wshlst"> <a href="#" title=""><i class="fa fa-heart-o"></i></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a class="vw-all-btn" href="#">view all <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+        </div>
+    </section>
+    <!-- expire_sec end -->
+    <section class="suggested_offer">
+        <div class="container">
+            <div class="sec-top">
+                <h1>Because you bought...</h1>
+                <div class="section-heading">
+                    <h2>Suggested Offers</h2>
+                </div>
+                <div class="section-filters">
+                    <ul>
+                        <li class="sort-by">
+                            <select><option>Sort By</option></select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="suggested_bx">
+                        <div class="suggested_bx_top">
+                            <figure> <img src="images/offer1.png" alt="offer1"> </figure>
+                            <div class="suggested_ofr_abs">
+                                <div class="dscnt">
+                                    <h6>Off <span>35%</span></h6>
+                                </div>
+                                <div class="wshlst"> <a href="#" title=""><i class="fa fa-heart-o"></i></a> </div>
+                            </div>
+                            <div class="suggested_cntnt">
+                                <h5><a href="#" title="">Up to 72% Off at Massage Spa & Beyond</a></h5>
+                                <h5 class="actual_price"><span>$200</span></h5>
+                                <h4 class="discount_price">$64</h4>
+                            </div>
+                        </div>
+                        <div class="suggested_bx_btm"> <a href="#" title="" class="add_wshlst">Add to Wishlist</a> <a href="#" title="" class="add_wshlst more_dtl">MORE DETAILS</a> </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="suggested_bx">
+                        <div class="suggested_bx_top">
+                            <figure> <img src="images/offer2.png" alt="offer2"> </figure>
+                            <div class="suggested_ofr_abs">
+                                <div class="dscnt">
+                                    <h6>Off <span>35%</span></h6>
+                                </div>
+                                <div class="wshlst"> <a href="#" title=""><i class="fa fa-heart-o"></i></a> </div>
+                            </div>
+                            <div class="suggested_cntnt">
+                                <h5><a href="#" title="">Up to 72% Off at Massage Spa & Beyond</a></h5>
+                                <h5 class="actual_price"><span>$200</span></h5>
+                                <h4 class="discount_price">$100</h4>
+                            </div>
+                        </div>
+                        <div class="suggested_bx_btm"> <a href="#" title="" class="add_wshlst">Add to Wishlist</a> <a href="#" title="" class="add_wshlst more_dtl">MORE DETAILS</a> </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="suggested_bx">
+                        <div class="suggested_bx_top">
+                            <figure> <img src="images/offer3.png" alt="offer3"> </figure>
+                            <div class="suggested_ofr_abs">
+                                <div class="dscnt">
+                                    <h6>Off <span>35%</span></h6>
+                                </div>
+                                <div class="wshlst"> <a href="#" title=""><i class="fa fa-heart-o"></i></a> </div>
+                            </div>
+                            <div class="suggested_cntnt">
+                                <h5><a href="#" title="">Up to 72% Off at Massage Spa & Beyond</a></h5>
+                                <h5 class="actual_price"><span>$200</span></h5>
+                                <h4 class="discount_price">$70</h4>
+                            </div>
+                        </div>
+                        <div class="suggested_bx_btm"> <span class="wshlistd">Wishlisted</span><a href="#" title="" class="add_wshlst more_dtl">MORE DETAILS</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- suggested_offer end -->
+    <!-- Footer area -->
+    <footer>
+        <div class="top_ftr">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="ftr_bx">
+                            <a href="index.html" title="" class="ftr_logo"><img src="images/footer_logo.png" alt="footer_logo"></a>
+                            <p>Discover fun activities and huge discounts in your city with Coupontify. Check out great deals on things to do from kids activities to nightlife; try out new restaurants, spas, massages and hair salons near you, or plan a trip away from home.</p>
+                            <div class="ftr_app">
+                                <h6>Download App</h6>
+                                <a href="#" title=""><img src="images/apple_icon.png" alt="apple_icon"></a>
+                                <a href="#" title=""><img src="images/android_icn.png" alt="android_icn"></a>
+                            </div>
+                        </div>
+                        <div class="ftr_bx1">
+                            <h6>Company INFO</h6>
+                            <ul>
+                                <li class="current-menu-item"><a href="index.html" title="">Home</a></li>
+                                <li><a href="#" title="">About Us </a></li>
+                                <li><a href="#" title="">Contact Us  </a></li>
+                                <li><a href="#" title="">Terms & Conditions</a></li>
+                                <li><a href="#" title="">Privacy Policy</a></li>
+                                <li><a href="#" title="">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="ftr_bx1 ftr_social">
+                            <h6>Follow US</h6>
+                            <ul>
+                                <li class=""><a href="#" title=""><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+                                <li class=""><a href="#" title=""><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+                                <li class=""><a href="#" title=""><i class="fa fa-linkedin" aria-hidden="true"></i>Linkedin</a></li>
+                                <li class=""><a href="#" title=""><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+                                <li class=""><a href="#" title=""><i class="fa fa-youtube" aria-hidden="true"></i>Youtube</a></li>
+                            </ul>
+                        </div>
+                        <div class="ftr_main_sc">
+                            <div class="ftr_bx1 ftr_bx3">
+                                <h6>Work with Coupontify</h6>
+                                <ul>
+                                    <li><a href="#">Join the Coupontify Marketplace</a>
+                                        <li>
+                                            <li><a href="#">Run a Coupontify Campaign</a>
+                                                <li>
+                                                    <li><a href="#">Learn About Coupontify Merchant</a>
+                                                        <li>
+                                                            <li><a href="#">Affiliate Program</a>
+                                                                <li>
+                                </ul>
+                            </div>
+                            <div class="ftr_bx1 ftr_bx4">
+                                <h6>More</h6>
+                                <ul>
+                                    <li><a href="#">Digital Coupons</a></li>
+                                    <li><a href="#">Loyalty Program</a></li>
+                                    <li><a href="#">Online Contest</a></li>
+                                    <li><a href="#">E-Gift</a></li>
+                                </ul>
+                            </div>
+                            <div class="mrchnt_sc"> <img src="images/mrchnt_logo.png" alt="mrchnt_logo">
+                                <h3>Merchant</h3>
+                                <p>Grow Your Business With Us Become a Merchant Today!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright_sc">
+            <div class="container">
+                <p>Copyright © 2016, AppName. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for JavaScript plugins) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- Our Custom js here -->
+    <script src="js/custom.js"></script>
+    <svg style="display:none;">
+         <symbol id="srvc_icon1" x="0px" y="0px" viewBox="0 0 96 96">
+             <g id="XMLID_1_">
+	<path id="XMLID_3_" class="st0" d="M40.4,80.5h15.1c3.3,0,6.1-2.7,6.1-6.1H34.4C34.4,77.8,37.1,80.5,40.4,80.5z"/>
+	<rect id="XMLID_4_" x="34.4" y="53.3" class="st0" width="27.2" height="18.2"/>
+	<path id="XMLID_7_" class="st0" d="M58.6,18.5c0-1-0.5-2-1.4-2.5c-0.9-0.6-1.9-0.7-2.9-0.3l-15.1,6.5c-1.1,0.5-1.8,1.6-1.8,2.8
+		v25.2h21.2V18.5z M49.5,44.2h-6.1V28.6l6.1-2.6V44.2z"/>
+</g>
+         </symbol>
+         <symbol id="srvc_icon2" x="0px" y="0px" viewBox="0 0 96 96">
+<g id="XMLID_2_">
+	<path id="XMLID_7_" class="st0" d="M52.2,33.5l10.3,10.3L43.8,62.5L33.5,52.2L52.2,33.5z M45.3,65.4l20.2-20.2
+		c0.4-0.4,0.6-0.9,0.6-1.5s-0.2-1.1-0.6-1.5L53.6,30.5c-0.4-0.4-0.9-0.6-1.5-0.6c-0.6,0-1.1,0.2-1.5,0.6L30.5,50.7
+		c-0.4,0.4-0.6,0.9-0.6,1.5c0,0.6,0.2,1.1,0.6,1.5l11.8,11.8c0.4,0.4,0.9,0.6,1.5,0.6S44.9,65.8,45.3,65.4z M74.3,44.7L44.7,74.3
+		c-0.8,0.8-1.8,1.2-3,1.2c-1.2,0-2.1-0.4-3-1.2l-4.1-4.1c1.2-1.2,1.8-2.7,1.8-4.4s-0.6-3.2-1.8-4.4c-1.2-1.2-2.7-1.8-4.4-1.8
+		c-1.7,0-3.2,0.6-4.4,1.8l-4.1-4.1c-0.8-0.8-1.2-1.8-1.2-3s0.4-2.1,1.2-3l29.6-29.6c0.8-0.8,1.8-1.2,3-1.2s2.1,0.4,3,1.2l4.1,4.1
+		c-1.2,1.2-1.8,2.7-1.8,4.4c0,1.7,0.6,3.2,1.8,4.4c1.2,1.2,2.7,1.8,4.4,1.8s3.2-0.6,4.4-1.8l4.1,4.1c0.8,0.8,1.2,1.8,1.2,3
+		C75.5,42.9,75.1,43.8,74.3,44.7z"/>
+</g>
+         </symbol>
+        <symbol id="srvc_icon3" x="0px" y="0px" viewBox="0 0 96 96">
+<g id="XMLID_1_">
+	<path id="XMLID_3_" class="st0" d="M46.8,37.6c0,1.9-1.8,4-4.1,4v32.9c0,4.7-6.4,4.7-6.4,0V41.6c-2.2,0-4.2-1.7-4.2-4.3V19.2
+		c0-1.6,2.3-1.6,2.3,0.1v13.4h1.9V19.1c0-1.4,2.2-1.5,2.2,0.1v13.4h2V19.2c0-1.5,2.1-1.6,2.1,0.1v13.4h1.9V19.2
+		c0-1.5,2.2-1.6,2.2,0.1L46.8,37.6z"/>
+	<path id="XMLID_4_" class="st0" d="M63.8,23.4v51.1c0,4.6-6.4,4.5-6.4,0V54.2H54V23.4C54,16.2,63.8,16.2,63.8,23.4z"/>
+</g>
+         </symbol>
+        <symbol id="srvc_icon4" x="0px" y="0px" viewBox="0 0 96 96">
+<g id="XMLID_6_">
+	<path id="XMLID_11_" class="st0" d="M71.3,24.7H24.7v5.8h46.7V24.7z M74.3,53.8V48l-2.9-14.6H24.7L21.8,48v5.8h2.9v17.5h29.2V53.8
+		h11.7v17.5h5.8V53.8H74.3z M48,65.5H30.5V53.8H48V65.5z"/>
+</g>
+         </symbol>
+        <symbol id="srvc_icon5" x="0px" y="0px" viewBox="0 0 96 96">
+<g id="XMLID_2_">
+	<path id="XMLID_4_" class="st0" d="M78.7,17.5c5.4,5.4-1.6,10.2-15,23.6l5.1,32.1l-4.6,7l-11-30.4L39.2,62.8l1,14.1l-2.9,2.4
+		L31.2,68l-2.8-2.8L17.1,59l2.4-2.9l14.1,1l12.8-14L15.5,31.5l7.7-3.9L55,32.5C68.5,19,73.3,12.2,78.7,17.5z"/>
+</g>
+         </symbol>
+        <symbol id="srvc_icon6" x="0px" y="0px" viewBox="0 0 96 96">
+<g id="XMLID_4_">
+	<polygon id="XMLID_6_" class="st0" points="73,56.3 77.2,52.2 73,48 62.6,58.4 37.6,33.4 48,23 43.8,18.8 39.7,23 35.5,18.8 
+		29.2,25.1 25.1,20.9 20.9,25.1 25.1,29.2 18.8,35.5 23,39.7 18.8,43.8 23,48 33.4,37.6 58.4,62.6 48,73 52.2,77.2 56.3,73 
+		60.5,77.2 66.8,70.9 70.9,75.1 75.1,70.9 70.9,66.8 77.2,60.5 	"/>
+</g>
+         </symbol>
+        <symbol id="srvc_icon7" x="0px" y="0px" viewBox="0 0 96 96">
+<g id="XMLID_2_">
+	<path id="XMLID_7_" class="st0" d="M66.3,62.9c2.5,0,4.6-2.1,4.6-4.6l0-25.2c0-2.5-2.1-4.6-4.6-4.6H29.7c-2.5,0-4.6,2.1-4.6,4.6
+		v25.2c0,2.5,2.1,4.6,4.6,4.6h-9.2c0,2.5,2.1,4.6,4.6,4.6h45.8c2.5,0,4.6-2.1,4.6-4.6H66.3z M29.7,33.1h36.7v25.2H29.7V33.1z
+		 M48,65.2c-1.3,0-2.3-1-2.3-2.3c0-1.3,1-2.3,2.3-2.3s2.3,1,2.3,2.3C50.3,64.2,49.3,65.2,48,65.2z"/>
+</g>
+         </symbol>
+        <symbol id="srvc_icon8" x="0px" y="0px" viewBox="0 0 96 96">
+<g id="XMLID_1_">
+	<path id="XMLID_3_" class="st0" d="M77.2,54.1l-10.4,3.1v-4.1c0-3.8-3.1-6.8-6.8-6.8H32.6c-3.8,0-6.8,3.1-6.8,6.8v20.5
+		c0,3.8,3.1,6.8,6.8,6.8H60c3.8,0,6.8-3.1,6.8-6.8v-4.1l10.4,3.1c1.8,0.5,3.3-0.6,3.3-2.4V56.6C80.5,54.7,79,53.6,77.2,54.1z"/>
+	<circle id="XMLID_4_" class="st0" cx="29.2" cy="29.2" r="13.7"/>
+	<circle id="XMLID_5_" class="st0" cx="60" cy="29.2" r="13.7"/>
+</g>
+         </symbol>
+    </svg>
+
+</body>
+
+</html>

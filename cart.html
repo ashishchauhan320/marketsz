@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>Shopping Cart ::Coupontify</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.png" sizes="32x32" type="image/x-icon">
+	<!-- Bootstrap.min.css, Animate.css and OwlCarousel.css -->
+	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+	<!-- Custom - from scss/style.scss -->
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> </head>
+
+<body>
+    <div class="pk-loader">
+        <svg id="triangle" viewBox="-3 -4 39 39">
+             <polygon fill="#EFEFEF" stroke="#555" stroke-width="1" points="16,0 32,32 0,32"></polygon>
+        </svg>
+        <div class="loader-text">© 2018 Marketsz.</div>
+    </div>
+	<!-- Header area -->
+	<header>
+		<div class="top-head">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<a class="logo" href="#">
+							<figure><img src="images/logo.png" alt="logo"></figure>
+						</a>
+					</div>
+					<div class="col-md-9">
+						<div class="head-top-right-side">
+							<ul>
+								<li><a href="login.html"><img src="images/sign-in.svg" alt="signIn"></a></li>
+                                <li><a href="register.html"><img src="images/signup.svg" alt="signup"></a></li>
+								<li>
+									<a href="#"><img src="images/call.svg" alt="phone-icon"></a>
+								</li>
+								<li>
+									<div class="slct-lang" href="#">
+										<select>
+											<option>EN</option>
+											<option>HIN</option>
+											<option>CHN</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<p>
+										<figure><img src="images/placeholder.svg" alt="MapLocation"></figure><span><small>Your city</small>New York</span></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="search-bar">
+			<div class="container">
+				<div class="srch-sec"> <i><img src="images/magnifier.svg" alt="search"></i>
+					<input type="search" placeholder="What Are You Searching For....?">
+					<button><img src="images/srch.svg" alt="search"></button>
+				</div>
+				<div class="srch-sec nearme"> <i><img src="images/magnifier.svg" alt="search"></i>
+					<input type="search" placeholder="Near Me">
+					<button><img src="images/srch.svg" alt="search"></button>
+				</div>
+				<div class="cart-count"> <img src="images/shopping-cart.svg" alt="cart-icon"> <span class="cart-value">2</span> </div>
+			</div>
+		</div>
+		<nav>
+			<div class="container">
+				<ul>
+					<li class="current-menu-item"><a href="#">Home</a></li>
+					<li><a href="#">Local</a></li>
+					<li><a href="#">Goods</a></li>
+					<li><a href="#">Getaways</a></li>
+					<li><a href="#">Clearance</a></li>
+					<li><a href="#">Coupons</a></li>
+					<li><a href="#">Cyber Hits</a></li>
+					<li><a href="#">Deals of the day</a></li>
+					<li><a href="#">Loyalty Program</a></li>
+					<li><a href="#">Contest</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<section class="wishlist-section cart_page">
+		<div class="container">
+			<div class="cart_main">
+				<div class="wishlist-items">
+					<h2>My Wishlist</h2>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="item-div">
+								<div class="w-item-thmbnl"> <span class="outer">
+                                           <input type="checkbox" id="box-1" class="chck">
+                                           <label for="box-1"></label>
+                                        </span>
+									<figure><img src="images/product-img.jpg" alt="product image" /></figure>
+									<figcaption>
+										<h4><a href="#">Apple iphone 6, secondhand</a></h4>
+										<p>iPhone 6 Mock-up</p>
+										<div class="cstm_inpt_nmbr">
+											<input type="number" value="5" min="0" max="100" step="1"> </div>
+									</figcaption>
+								</div>
+								<div class="w-item-info"> <i class="fa fa-times-circle remove-item" aria-hidden="true"></i>
+									<h3>$337</h3>
+									<p>$499 <span>You Save $112</span></p> <a href="#">Move to Wishlist</a> </div>
+							</div>
+							<div class="item-div">
+								<div class="w-item-thmbnl"> <span class="outer">
+                                           <input type="checkbox" id="box-2" class="chck">
+                                           <label for="box-2"></label>
+                                        </span>
+									<figure><img src="images/product-img.jpg" alt="product image" /></figure>
+									<figcaption>
+										<h4><a href="#">Apple iphone 6, secondhand</a></h4>
+										<p>iPhone 6 Mock-up</p>
+										<div class="cstm_inpt_nmbr">
+											<input type="number" value="5" min="0" max="100" step="1"> </div>
+									</figcaption>
+								</div>
+								<div class="w-item-info"> <i class="fa fa-times-circle remove-item" aria-hidden="true"></i>
+									<h3>$337</h3>
+									<p>$499 <span>You Save $112</span></p> <a href="#">Move to Wishlist</a> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wishlist-items payment_main">
+					<h2>Payment method</h2>
+					<div class="payment_innr">
+						<p>
+							<input type="radio" id="test1" name="radio-group">
+							<label for="test1">Credit Card ending .....1234</label>
+						</p>
+						<p>
+							<input type="radio" id="test2" name="radio-group" checked>
+							<label for="test2">Add alternative payment method</label>
+						</p>
+					</div>
+					<div class="payment_form_alternative">
+						<form>
+							<div class="selection_bx">
+								<p>
+									<input type="radio" id="test3" name="radio-group">
+									<label for="test3">Credit Card</label>
+								</p>
+								<p>
+									<input type="radio" id="test4" name="radio-group" checked>
+									<label for="test4">PayPal</label>
+								</p>
+								<p>
+									<input type="radio" id="test5" name="radio-group" checked>
+									<label for="test5">iDEAL</label>
+								</p>
+								<p>
+									<select>
+										<option>Alternative</option>
+										<option>Alternative1</option>
+									</select>
+								</p>
+							</div>
+							<!-- selection_bx end -->
+							<p>
+								<input type="text" placeholder="Name on Card" class="form_control">
+							</p>
+							<div class="fl_med">
+								<p>
+									<input type="text" placeholder="Card Number" class="form_control">
+								</p>
+								<p><img src="images/visa_img1.png" alt="visa_img1"></p>
+							</div>
+							<div class="fl_cvv fl_mnth">
+							<p class="cal_icn">
+									<input type="text" placeholder="Month" class="form_control cvv datepicker1">
+								</p>
+								<p class="cal_icn">
+									<input type="text" placeholder="Year" class="form_control cvv  datepicker1">
+								</p>
+							</div>
+							<div class="fl_cvv">
+								<p class="cvv1">
+									<input type="text" placeholder="CVV" class="form_control cvv">
+								</p>
+								
+							</div>
+							<p>
+								<input type="text" placeholder="Billing Address" class="form_control">
+							</p>
+							<p>
+								<input type="text" placeholder="City" class="form_control">
+							</p>
+							<div class="fl_sctn">
+								<p>
+									<input type="text" placeholder="State / Province" class="form_control state_slct">
+								</p>
+								<p>
+									<input type="text" placeholder="Postal Code" class="form_control postal">
+								</p>
+							</div>
+							<div class="remembr_sc"><span class="outer">
+                                           <input type="checkbox" id="box-12" class="chck">
+                                           <label for="box-12">Save card for future payments</label>
+                                        </span>
+								<div class="save_sctn"><a href="#" title="" class="sve_btn">SAVE</a></div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!--cart_main end -->
+			<div class="cart_summary">
+				<h6>Credit: $50</h6>
+				<h2>Cart Summary</h2>
+				<div class="cart_summary_inner">
+					<p><span>Subtotal (2 items)</span><span>$349</span></p>
+					<p><span>Taxes & Fees</span><span>$21</span></p>
+					<p class="totl_sctn"><a href="#" class="promo_btn">Promo Code</a><a href="#" title="" class="apply_btn">Apply</a></p>
+					<div class="total_value">
+						<p><strong><span>Cart Total</span><span>$370</span></strong></p>
+						<p><span class="total_saving">Total Savings</span><span>$140</span></p>
+						<div class="prchs_sc"><a href="#" title="" class="purchase_btn">Purchase Now</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	<!-- Footer area -->
+	<footer>
+		<div class="top_ftr">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="ftr_bx">
+							<a href="index.html" title="" class="ftr_logo"><img src="images/footer_logo.png" alt="footer_logo"></a>
+							<p>Discover fun activities and huge discounts in your city with Coupontify. Check out great deals on things to do from kids activities to nightlife; try out new restaurants, spas, massages and hair salons near you, or plan a trip away from home.</p>
+							<div class="ftr_app">
+								<h6>Download App</h6>
+								<a href="#" title=""><img src="images/apple_icon.png" alt="apple_icon"></a>
+								<a href="#" title=""><img src="images/android_icn.png" alt="android_icn"></a>
+							</div>
+						</div>
+						<div class="ftr_bx1">
+							<h6>Company INFO</h6>
+							<ul>
+								<li class="current-menu-item"><a href="index.html" title="">Home</a></li>
+								<li><a href="#" title="">About Us </a></li>
+								<li><a href="#" title="">Contact Us  </a></li>
+								<li><a href="#" title="">Terms & Conditions</a></li>
+								<li><a href="#" title="">Privacy Policy</a></li>
+								<li><a href="#" title="">FAQ</a></li>
+							</ul>
+						</div>
+						<div class="ftr_bx1 ftr_social">
+							<h6>Follow US</h6>
+							<ul>
+								<li class=""><a href="#" title=""><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+								<li class=""><a href="#" title=""><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+								<li class=""><a href="#" title=""><i class="fa fa-linkedin" aria-hidden="true"></i>Linkedin</a></li>
+								<li class=""><a href="#" title=""><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+								<li class=""><a href="#" title=""><i class="fa fa-youtube" aria-hidden="true"></i>Youtube</a></li>
+							</ul>
+						</div>
+						<div class="ftr_main_sc">
+							<div class="ftr_bx1 ftr_bx3">
+								<h6>Work with Coupontify</h6>
+								<ul>
+									<li><a href="#">Join the Coupontify Marketplace</a>
+										<li>
+											<li><a href="#">Run a Coupontify Campaign</a>
+												<li>
+													<li><a href="#">Learn About Coupontify Merchant</a>
+														<li>
+															<li><a href="#">Affiliate Program</a>
+																<li>
+								</ul>
+							</div>
+							<div class="ftr_bx1 ftr_bx4">
+								<h6>More</h6>
+								<ul>
+									<li><a href="#">Digital Coupons</a></li>
+									<li><a href="#">Loyalty Program</a></li>
+									<li><a href="#">Online Contest</a></li>
+									<li><a href="#">E-Gift</a></li>
+								</ul>
+							</div>
+							<div class="mrchnt_sc"> <img src="images/mrchnt_logo.png" alt="mrchnt_logo">
+								<h3>Merchant</h3>
+								<p>Grow Your Business With Us Become a Merchant Today!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright_sc">
+			<div class="container">
+				<p>Copyright © 2016, AppName. All Rights Reserved</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- jQuery (necessary for JavaScript plugins) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
+	<!-- Our Custom js here -->
+	<script src="js/InputSpinner.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+	<link href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/css/lightness/jquery-ui-1.10.2.custom.min.css" rel="stylesheet">
+
+<script>
+		$("input[type='number']").InputSpinner({
+			// button text/icons
+			decrementButton: "<strong>-</strong>"
+			, incrementButton: "<strong>+</strong>", // class of input group
+			groupClass: "input-group-spinner", // button class
+			buttonsClass: "btn-outline-secondary", // button width
+			buttonsWidth: "2.5em", // text alignment
+			textAlign: "center", // delay in milliseconds
+			autoDelay: 500, // interval in milliseconds
+			autoInterval: 100, // boost after these steps
+			boostThreshold: 15, // boost multiplier
+			boostMultiplier: 2, // detects the local from `navigator.language`, if null
+			locale: null
+		});
+	</script>
+	<script>
+		$('.datepicker1').datepicker({
+			uiLibrary: 'bootstrap4'
+		});
+		
+	</script>
+
+</body>
+
+</html>
